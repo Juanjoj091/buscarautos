@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^buscarautos.solocom.cl$
+RewriteRule ^procetel$ "http\:\/\/buscarautos\.solocom\.cl\/" [R=301,L]
+

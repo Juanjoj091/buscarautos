@@ -1,0 +1,192 @@
+
+/****************************************************************************************\
+ **   @name		EXP Autos  2.0                                                  **
+ **   @package          Joomla 1.6                                                      **
+ **   @author		EXP TEAM::Alexey Kurguz (Grusha)                                **
+ **   @copyright	Copyright (C) 2005 - 2011  EXP TEAM::Alexey Kurguz (Grusha)     **
+ **   @link             http://www.feellove.eu                                          **
+ **   @license		Commercial License                                              **
+ \****************************************************************************************/
+
+.modexpgoogleads{
+    margin: 0px 0 0px 0;
+}
+
+.modexpgoogleads .expautos_images_clear{
+    clear: both;
+    padding:0;
+    margin:0;
+}
+
+.modexpgoogleads .expgoogleads_img{
+    float: left;
+    border: 1px solid #EAEAEA;
+    padding: 1px;
+    margin: 9px 0 0 0;
+}
+
+.modexpgoogleads .expgoogleads_right{
+    float: right;
+    padding: 0 5px 0 5px;
+    text-align: left;
+}
+
+.modexpgoogleads .expgoogleads_right a{
+    color:#000;
+}
+
+.modexpgoogleads .expgoogleads_right a:hover{
+    color:#CC3300;
+}
+
+.modexpgoogleads .expgoogleads_right p.expgoogleads_top{
+    float: left;
+    padding: 3px;
+    text-align: left;
+    background: #EAEAEA;
+    width:98%;
+}
+
+.modexpgoogleads .expgoogleads_right p.expgoogleads_middle{
+    margin:1px 0;
+    padding:0;
+}
+
+.modexpgoogleads .expgoogleads_price{
+    padding: 3px;
+    text-align: center;
+    background: #EAEAEA;
+    width:98%;
+}
+
+
+.modexpgoogleads .expgmapleft{
+    float: left;
+    margin: 0px 0 0 0;
+}
+.modexpgoogleads .expgmapright{
+    float: right;
+}
+.modexpgoogleads .expgmapright p{
+    margin:0 10px 0 0;
+}
+
+.modexpgoogleads fieldset.expsutospro_search_fieldset{
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogleads p label {  
+    display: block;
+    font-weight: bold;
+}
+
+.modexpgoogleads p select {  
+    width:200px;
+}
+
+.modexpgoogleads p input {  
+    width:190px;
+}
+
+.modexpgoogleads p.expdouble span{
+    float: left;
+}
+
+.modexpgoogleads .expclear {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogleads p.expdouble span.expdouble_first{
+    margin: 0 20px 0 0;
+}
+
+.modexpgoogleads p label.expdouble_label {
+    width: 90px;
+}
+
+.modexpgoogleads p select.modexpsearch_year {
+    width:90px;
+}
+
+.modexpgoogleads input.modgoogleads_price {
+    width:50px;
+}
+
+.modexpgoogleads p.searchcheckbox{
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogleads p.searchcheckbox label {
+    display: inline;
+    width:55px;
+}
+
+.modexpgoogleads p.searchcheckbox input {
+    width:20px;
+    margin: 0 50px 0 0;
+}
+
+.modexpgoogleads .expdisplay_none{
+    display: none;
+}
+
+.modexpgoogleads span.explinkshow{
+    margin: 5px 0;
+}
+
+.modexpgoogleads .expgnomap{
+    
+}
+
+.modexpautospro_search{
+    
+}
+
+.modexpgoogleads fieldset.expgoogleads_fieldset{
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogleads p label {  
+    display: block;
+    font-weight: bold;
+}
+
+.modexpgoogleads p select {  
+    width:200px;
+}
+
+.modexpautospro_search p input {  
+    width:200px;
+}
+
+.modexpgoogleads p.expdoubleads span{
+    float: left;
+}
+
+.modexpgoogleads .expclear {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogleads p.expdoubleads span.expdoubleads_first{
+    margin: 0 20px 0 0;
+}
+
+.modexpgoogleads p.expdoubleads select {
+    width: 90px;
+}
+
+.modexpgoogleads p.expdoubleads input {
+    width:85px;
+}
+
+.expautos_images_clear{
+    clear: both;
+}

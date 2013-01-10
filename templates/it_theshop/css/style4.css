@@ -1,0 +1,116 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 -2011 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+/* cart module */
+
+#jshop_module_cart .lof_jshop_top {
+	background-color:#8C1D79;
+	box-shadow:1px 1px 0 #8C1D79, -1px -1px 0 #8C1D79 }
+	
+#jshop_module_cart .lof_jshop_bottom {
+	background-color:#8C1D79;
+	box-shadow:1px 1px 0 #8C1D79, -1px -1px 0 #8C1D79 }
+
+	
+	#jshop_module_cart:after {
+		background-image:url(../images/styles/style4/cart_pin.png);
+		width:60px;
+		height:60px;
+		top:-44px;
+		right:-42px;}
+	
+
+/* icemegamenu */
+div.icemegamenu ul#icemegamenu li span.icemega_desc {
+	background-color:#8C1D79;
+	background-image: -moz-linear-gradient(#B6259D, #8C1D79);
+	background-image: -webkit-linear-gradient(#B6259D, #8C1D79); 
+	background-image: -o-linear-gradient(#B6259D, #8C1D79);
+	background-image: linear-gradient(#B6259D, #8C1D79);}
+				
+
+div.icemegamenu ul#icemegamenu li span.icemega_desc:after{
+    border-top-color: #8C1D79;}
+
+
+/* typography.css */
+	
+	
+/* layout.css */	
+
+		
+/* joomla.css */
+
+
+ 
+/* modules.css */	
+.col-module .col-module-style1 .col-module-header  {
+	background-color:#8C1D79;
+	background-image: -moz-linear-gradient(top, #B6259D, #8C1D79 60%, #8C1D79);
+	background-image: -webkit-linear-gradient(top, #B6259D, #8C1D79 60%, #8C1D79); 
+	background-image: -o-linear-gradient(top, #B6259D, #8C1D79 60%, #8C1D79);
+	box-shadow:0 5px 5px #E7C2DA;}
+
+.col-module .col-module-style1 .col-module-header-arrow {
+	border-top-color:#8C1D79}
+	
+.col-module .col-module-style1 h3.mod-title span {
+	color:#D28CB9;}
+
+
+#footer .moduletable-style1 h3.mod-title {
+	background-color:#8C1D79;}
+
+#footer .moduletable-style1 h3.mod-title .col-module-header-arrow {
+	border-top-color:#8C1D79}
+	
+#footer .moduletable-style1 h3.mod-title span  {
+	color:#D28CB9;}
+	
+	
+			
+		
+ /* forms.css */
+a.cart,
+button.cart {		
+	background:#8C1D79;
+	background: -moz-linear-gradient(top, #B6259D, #8C1D79);
+	background: -webkit-linear-gradient(top, #B6259D, #8C1D79);
+	background: -ms-linear-gradient(top, #B6259D, #8C1D79);
+	background: -o-linear-gradient(top, #B6259D, #8C1D79);
+	background: linear-gradient(top, #B6259D, #8C1D79);
+	border-color:#8C1D79}
+	a.cart:focus,
+	button.cart:focus { background:#8C1D79;}
+
+
+
+/* modules.css */
+
+	/* icetabs */
+	.ice-tabs-candy .ice-next, 
+	.ice-tabs-candy .ice-previous {
+		background-image:url(../images/styles/style4/arrows.png); }
+	
+	/* icecarousel */
+	.ice-carousel .ice-navigator-outer ul.ice-navigator li span { 
+		background-image:url(../images/styles/style4/dot.png)}
+	.ice-carousel .ice-next, 
+	.ice-carousel .ice-previous {
+		background-image:url(../images/styles/style4/arrows.png); }
+	
+	/* iceaccordion */
+	.iceaccordion-paging .iceaccordion-prev,
+	.iceaccordion-paging .iceaccordion-next{ 
+		background-image:url(../images/styles/style4/accordion_arrows.png)}
+	
+	
+/* offline and not found */

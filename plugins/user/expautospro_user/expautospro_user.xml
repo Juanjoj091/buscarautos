@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="user" method="upgrade">
+    <name>PLG_EXPAUTOSPRO_USER</name>
+    <author>Alexey Kurguz (Grusha)</author>
+    <creationDate>10/08/2012</creationDate>
+    <copyright>(C) 2005 - 2012 EXP Team. All rights reserved.</copyright>
+    <license>Commercial license</license>
+    <authorEmail>grushaexp@feellove.eu</authorEmail>
+    <authorUrl>www.feellove.eu</authorUrl>
+    <version>1.1</version>
+    <description>PLG_EXPAUTOSPRO_USER_XML_DESCRIPTION</description>
+ 
+    <files>
+        <filename plugin="expautospro_user">expautospro_user.php</filename>
+        <filename>index.html</filename>
+        <folder>profiles</folder>
+    </files>
+ 
+    <languages>
+        <language tag="en-GB">en-GB.plg_user_expautospro_user.ini</language>
+        <language tag="en-GB">en-GB.plg_user_expautospro_user.sys.ini</language>
+    </languages>
+ 
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+            <field name="expprofile_usefields" type="radio"
+				label="COM_EXPAUTOSPRO_PLG_USER_REGFIELDS_TEXT"
+				description="COM_EXPAUTOSPRO_PLG_USER_REGFIELDS_DESC"
+				default="1" class="inputbox"
+			>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="expprofile_delete" type="radio"
+				label="COM_EXPAUTOSPRO_PLG_USER_DELADS_TEXT"
+				description="COM_EXPAUTOSPRO_PLG_USER_DELADS_DESC"
+				default="1" class="inputbox"
+			>
+                <option value="1">JTOOLBAR_DELETE</option>
+                <option value="0">JTRASHED</option>
+            </field>
+            <field name="expprofile_deluser" type="radio"
+				label="COM_EXPAUTOSPRO_PLG_USER_DELUSER_TEXT"
+				description="COM_EXPAUTOSPRO_PLG_USER_DELUSER_DESC"
+				default="1" class="inputbox"
+			>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

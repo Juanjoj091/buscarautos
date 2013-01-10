@@ -1,0 +1,96 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 - 2011 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+
+/* ---------------------- ie.css --------------------------
+This CSS file contain the fixes for the Internet Explorer 7 and
+Internet Explorer 8. The properties with "*" before them are
+only for Internet Exploper 7. The other may apply to both 
+browser versions.
+
+- For IE6 we have droppped support.
+- For IE9 there is no need for hacks as this browser version
+is improved very well comparing to IE7/IE8  
+---------------------------------------------------------------- */
+
+/* icemegamenu.css */
+div.icemegamenu ul#icemegamenu li span.icemega_desc {
+	display:none}
+	
+div.icemegamenu ul#icemegamenu li:hover span.icemega_desc,
+div.icemegamenu ul#icemegamenu li.current span.icemega_desc,
+div.icemegamenu ul#icemegamenu li:hover span.icemega_desc:after,
+div.icemegamenu ul#icemegamenu li.current span.icemega_desc:after,
+div.icemegamenu ul#icemegamenu li.active  span.icemega_desc,
+div.icemegamenu ul#icemegamenu li.active  span.icemega_desc:after,
+div.icemegamenu ul#icemegamenu li li span.icemega_desc,
+div#subMenusContainer span.icemega_desc { 
+		display:block}	
+
+
+/* forms.css 
+-------------*/
+button,
+input.button,
+a.button { *padding:2px 5px 0px}
+
+
+
+/* modules.css */
+#promo .moduletable h3.mod-title,
+#bottom .moduletable h3.mod-title,
+#footer .moduletable,
+.col-module,
+.col-module-style1, 
+.col-module-style2 {
+	*zoom:1;}
+
+
+#promo .moduletable h3.mod-title,
+#bottom .moduletable h3.mod-title{
+	margin-bottom:0}
+	
+					
+				
+/* layout.css */
+
+#content_inside,
+.productfull .cart_wrapper {
+	*position:static}
+	
+hr { *background:none; *color:#ccc; *height:1px!important; *margin-bottom:25px}
+
+
+	
+/* joomla.css */
+
+form#login-form p#form-login-remember label {
+	*width:95px}		
+		
+#search .button {}		
+		
+/* modules.css */
+.col-module .col-module-header .col-module-header-arrow {
+	*bottom:-6px}		
+			
+
+
+		
+/* icetabs */
+	
+
+
+	
+/* color fixes on trasparency for IE7 */
+.icesubMenu .icemega_cover_module .icemega_modulewrap { 
+	*color:#fff;}
+
+	

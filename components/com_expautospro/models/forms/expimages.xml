@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: EXP Autos Pro Images !-->
+<form>
+	<fieldset name="expimages"
+		addfieldpath="/components/com_expautospro/models/fields"
+	>    
+		<field name="id" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC"
+                        type="hidden" />           
+                <field name="expimages"
+                        label="" 
+                        description=""
+                        type="hidden" />
+	</fieldset>
+</form>

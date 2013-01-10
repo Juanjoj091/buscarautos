@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_EXPAUTOSPRO_VIEW_MODELS_TITLE" option="COM_EXPAUTOSPRO_VIEW_MODELS_OPTION">
+		<help
+			key = ""
+		/>
+		<message>
+			<![CDATA[COM_EXPAUTOSPRO_VIEW_MODELS_DESC]]>
+		</message>
+	</layout>
+        <fields name="request">
+            <fieldset name="request" label="COM_EXPAUTOSPRO_VIEW_MODELS_OPTIONS_TEXT"
+			addfieldpath="/administrator/components/com_expautospro/models/fields"
+            >
+                <field name="catid" type="category"
+			extension="com_expautospro"
+			label="COM_EXPAUTOSPRO_VIEW_MAKES_SELECTCATEGORY_TEXT" 
+                        description="COM_EXPAUTOSPRO_VIEW_MAKES_SELECTCATEGORY_DESC"
+                        show_root="true"
+                        required="true"
+			/>
+                <field name="makeid" type="expmenumake"
+                        label="COM_EXPAUTOSPRO_MAKE_TEXT" 
+                        description="COM_EXPAUTOSPRO_MAKESELECT_DESC"
+                        expmodel="0"
+                        required="true" />
+            </fieldset>
+	</fields>
+</metadata>

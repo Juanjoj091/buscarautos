@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_EXPAUTOSPRO_VIEW_EXPDETAIL_TITLE" option="COM_EXPAUTOSPRO_VIEW_EXPDETAIL_OPTION">
+		<help
+			key = ""
+		/>
+		<message>
+			<![CDATA[COM_EXPAUTOSPRO_VIEW_EXPDETAIL_DESC]]>
+		</message>
+	</layout>
+        <fields name="request">
+            <fieldset name="request" label="COM_EXPAUTOSPRO_DETAILID_OPTIONS_TEXT"
+            >
+                <field name="id" type="input"
+			label="COM_EXPAUTOSPRO_DETAILID_TEXT" 
+                        description="COM_EXPAUTOSPRO_DETAILID_DESC" 
+                        />
+            </fieldset>
+	</fields>
+</metadata>

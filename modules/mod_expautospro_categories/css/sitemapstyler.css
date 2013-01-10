@@ -1,0 +1,63 @@
+/*
+        Sitemap Styler 	 
+*/
+
+.expcatmod, .expcatmod ul, .expcatmod li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.expcatmod{background:url(../images/line1.gif) repeat-y;}
+.expcatmod li{
+    line-height:20px;
+    margin-top:1px;
+    position:relative;
+    width:100%;
+}
+/* IE leaves a blank space where span is added so this is to avoid that */
+* html .expcatmod li{
+    float:left;
+    display:inline;
+}
+
+.expcatmod li.expcatgeneral{
+    font-weight: bolder;
+}
+
+.expcatmod li{padding-left:25px;}
+.expcatmod li span{float:left;position:absolute;top:5px;left:5px;width:13px;height:13px;cursor:auto;font-size:0;}
+.expcatmod li span, .expcatmod li span.collapsed{background:url(../images/collapsed.gif) no-repeat 0 0;} 
+.expcatmod li span.expanded{background:url(../images/expanded.gif) no-repeat 0 0;}
+
+/* sub levels */
+
+.expcatmod li ul{	
+    font-weight: normal;
+    color:#000;
+    margin-left:10px;
+    background:url(../images/line1.gif) repeat-y;
+}
+.expcatmod li li{	
+    background:url(../images/line2.gif) no-repeat 0 0;
+}
+.expcatmod li.expactive{
+    font-weight: bold;
+}
+
+/* etc. */
+
+/* float fix */
+
+.expcatmod:after, .expcatmod ul:after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.expcatmod, .expcatmod ul{display:block;}
+/*  \*/
+.expcatmod, .expcatmod ul{min-height:1%;}
+* html .expcatmod, * html .expcatmod ul{height:1%;}
+/*  */
+.expcatmod ul{display:none;}

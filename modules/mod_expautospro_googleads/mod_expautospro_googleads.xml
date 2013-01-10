@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+    <!-- Name of the Module -->
+    <name>MOD_EXPAUTOSPRO_GOOGLEADS</name> 
+ 
+    <!-- Name of the Author -->
+    <author>Alexey Kurguz (Grusha)</author> 
+ 
+    <!-- Version Date of the Module -->
+    <creationDate>2012-02-21</creationDate> 
+ 
+    <!-- Copyright information -->
+    <copyright>All rights reserved by EXP Team 2006 - 2012.</copyright> 
+ 
+    <!-- License Information -->
+    <license>Commercial</license> 
+ 
+    <!-- Author's email address -->
+    <authorEmail>info@feellove.eu</authorEmail> 
+ 
+    <!-- Author's website -->
+    <authorUrl>www.feellove.eu</authorUrl> 
+ 
+    <!-- Module version number -->
+    <version>2.1</version> 
+ 
+    <!-- Description of what the module does -->
+    <description>MOD_EXPAUTOSPRO_GOOGLEADS_XML_DESCRIPTION</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+    <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+        <filename module="mod_expautospro_googleads">mod_expautospro_googleads.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </files>
+ 
+	<languages>
+		<language tag="en-GB">en-GB.mod_expautospro_googleads.ini</language>
+		<language tag="en-GB">en-GB.mod_expautospro_googleads.sys.ini</language>
+	</languages>
+ 
+    <config>
+        <fields name="params">
+            <fieldset name="basic"
+			addfieldpath="/components/com_expautospro/models/fields">
+                <field	
+                        name="usegmaps"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_GMAPS_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_GMAPS_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="2">JHIDE</option>
+                </field>
+                <field	
+                        name="showcount"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_SHOWCOUNT_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_SHOWCOUNT_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field
+                        name="latitude"
+                        type="text"
+                        size="20"
+                        default="40.111689"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_LATITUDE_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_LATITUDE_DESC" />
+                <field
+                        name="longitude"
+                        type="text"
+                        size="20"
+                        default="-96.855469"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_LONGITUDE_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_LONGITUDE_DESC" />
+                <field
+                        name="zoom"
+                        type="text"
+                        size="20"
+                        default="5"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_GZOOM_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_GZOOM_DESC" />
+                <field
+                        name="width"
+                        type="text"
+                        size="20"
+                        default="500"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_GMAP_WIDTH_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_GMAP_WIDTH_DESC" />
+                <field
+                        name="height"
+                        type="text"
+                        size="20"
+                        default="300"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_GMAP_HEIGHT_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_DEF_GMAP_HEIGHT_DESC" />
+                <field
+                    name="catid"
+                    type="category"
+                    extension="com_expautospro"
+                    published="1"
+                    default="0"
+                    show_root="true"
+                    label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_CATEGORY_TEXT"
+                    description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_CATEGORY_DESC"/>
+                <!--
+                <field name="catid" type="categor"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_CATEGORY_TEXT" 
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_CATEGORY_DESC"
+                        default="0"
+                        database="categories"
+                        />
+                -->
+                <field	
+                        name="usemakes"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_MAKES_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_MAKES_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usemodels"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_MODELS_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_MODELS_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usesmodel"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_SMODEL_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_SMODEL_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usebodytype"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_BODYTYPE_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_BODYTYPE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useyear"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_YEAR_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_YEAR_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useprice"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_PRICE_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_PRICE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usemileage"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_MILEAGE_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_MILEAGE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usefuel"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_FUEL_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_FUEL_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usedrive"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_DRIVE_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_DRIVE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usetrans"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_USE_TRANS_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_USE_TRANS_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+            </fieldset>
+            <fieldset
+                        name="expprice">
+                <field	
+                        name="price_field"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_PRICEFIELD_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_PRICEFIELD_DESC" >
+                        <option value="0">MOD_EXPAUTOSPRO_GOOGLEADS_PRICEFIELD_INPUT_VAL</option>
+                        <option value="1">MOD_EXPAUTOSPRO_GOOGLEADS_PRICEFIELD_SELECT_VAL</option>
+                </field>
+                <field name="spacer_price" type="spacer" class="text"
+                            label="MOD_EXPAUTOSPRO_GOOGLEADS_SPACERPRICE_TEXT"
+                            />
+                <field name="price_fromval" type="textarea"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_PRICEFROMVAL_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_PRICEFROMVAL_DESC"
+                        rows="5" 
+                        cols="30"  />
+                <field name="price_toval" type="textarea"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_PRICETOVAL_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_PRICETOVAL_DESC"
+                        rows="5" 
+                        cols="30" />
+            </fieldset>
+            <fieldset
+                        name="expjavascript">
+                <field	
+                        name="jquery"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_JQUERY_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_JQUERY_DESC" >
+                        <option value="0">MOD_EXPAUTOSPRO_GOOGLEADS_JQUERY_FROM_NO</option>
+                        <option value="1">MOD_EXPAUTOSPRO_GOOGLEADS_JQUERY_FROM_COMPONENT</option>
+                        <option value="2">MOD_EXPAUTOSPRO_GOOGLEADS_JQUERY_FROM_MODULE</option>
+                </field>
+                <field	
+                        name="jq_chained"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_JQCHAINED_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_JQCHAINED_DESC" >
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                </field>
+                <field	
+                        name="jq_chosen"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_GOOGLEADS_JQCHOSEN_TEXT"
+                        description="MOD_EXPAUTOSPRO_GOOGLEADS_JQCHOSEN_DESC" >
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        default="default"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                        name="cache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="text"
+                        default="900"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

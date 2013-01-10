@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+    <!-- Name of the Module -->
+    <name>MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA</name> 
+ 
+    <!-- Name of the Author -->
+    <author>Alexey Kurguz (Grusha)</author> 
+ 
+    <!-- Version Date of the Module -->
+    <creationDate>2012-05-02</creationDate> 
+ 
+    <!-- Copyright information -->
+    <copyright>All rights reserved by EXP Team 2006 - 2012.</copyright> 
+ 
+    <!-- License Information -->
+    <license>Commercial</license> 
+ 
+    <!-- Author's email address -->
+    <authorEmail>info@feellove.eu</authorEmail> 
+ 
+    <!-- Author's website -->
+    <authorUrl>www.feellove.eu</authorUrl> 
+ 
+    <!-- Module version number -->
+    <version>1.0</version> 
+ 
+    <!-- Description of what the module does -->
+    <description>MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_XML_DESCRIPTION</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+    <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+        <filename module="mod_expautospro_slideshow_camera">mod_expautospro_slideshow_camera.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </files>
+ 
+	<languages>
+		<language tag="en-GB">en-GB.mod_expautospro_slideshow_camera.ini</language>
+		<language tag="en-GB">en-GB.mod_expautospro_slideshow_camera.sys.ini</language>
+	</languages>
+ 
+    <config>
+        <fields name="params">
+            <fieldset name="basic"
+			addfieldpath="/components/com_expautospro/models/fields">
+                <field name="spacer_basicexp" type="spacer" class="text"
+					label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SPACER_BEXP_LABEL"
+				/>
+                <field	
+                        name="jquery"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_JQUERY_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_JQUERY_DESC" >
+                        <option value="0">MOD_EXPAUTOSPRO_SLIDESHOW_JQUERY_FROM_NO</option>
+                        <option value="1">MOD_EXPAUTOSPRO_SLIDESHOW_JQUERY_FROM_COMPONENT</option>
+                        <option value="2">MOD_EXPAUTOSPRO_SLIDESHOW_JQUERY_FROM_MODULE</option>
+                </field>
+                <field	
+                        name="image_size"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_IMGSIZE_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_IMGSIZE_DESC" >
+                        <option value="0">MOD_EXPAUTOSPRO_SLIDESHOW_IMGSIZE_BIG</option>
+                        <option value="1">MOD_EXPAUTOSPRO_SLIDESHOW_IMGSIZE_MIDDLE</option>
+                </field>
+                <field
+                        name="expcountimg"
+                        type="text"
+                        default="5"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_COUNTIMG_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_COUNTIMG_DESC" />
+                <field name="expcategor"
+                        type="category"
+                        extension="com_expautospro"
+                        published="1"
+                        default="0"
+                        show_root="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_CATEGORIES_TEXT" 
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_CATEGORIES_DESC"
+                        />
+                <field name="expuser" type="expuserlist"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_USER_TEXT" 
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_USER_DESC"
+                        default="0"
+                        />
+                <field	
+                        name="expsort1"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT1_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT1_DESC" >
+                        <option value="0">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT1_VAL_ALL_TEXT</option>
+                        <option value="1">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT1_VAL_CATEGORY_TEXT</option>
+                        <option value="2">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT1_VAL_MAKES_TEXT</option>
+                        <option value="3">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT1_VAL_MODELS_TEXT</option>
+                        <option value="4">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT1_VAL_USER_TEXT</option>
+                </field>
+                <field	
+                        name="expsort2"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT2_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT2_DESC" >
+                        <option value="0">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT2_VAL_ALL_TEXT</option>
+                        <option value="ftop">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT2_VAL_TOP_TEXT</option>
+                        <option value="fcommercial">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT2_VAL_COMMERCIAL_TEXT</option>
+                        <option value="special">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT2_VAL_SPECIAL_TEXT</option>
+                        <option value="solid">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SORT2_VAL_SOLD_TEXT</option>
+                </field>
+                <field	
+                        name="expgroup"
+                        type="list"
+			default="id"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_GROUP_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_GROUP_DESC" >
+                        <option value="id">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_GROUP_VAL_ID_TEXT</option>
+                        <option value="ordering">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_GROUP_VAL_ORDERING_TEXT</option>
+                        <option value="random">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_GROUP_VAL_RANDOM_TEXT</option>
+                </field>
+                <field	
+                        name="exporder"
+                        type="list"
+			default="desc"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ORDER_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ORDER_DESC" >
+                        <option value="asc">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ORDER_VAL_ASC_TEXT</option>
+                        <option value="desc">MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ORDER_VAL_DESC_TEXT</option>
+                </field>
+                <field	
+                        name="showsolid"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWSOLID_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWSOLID_DESC" >
+                        <option value="0">JSHOW</option>
+                        <option value="1">JHIDE</option>
+                </field>
+                <field	
+                        name="showreserved"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWRESERVED_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWRESERVED_DESC" >
+                        <option value="0">JSHOW</option>
+                        <option value="1">JHIDE</option>
+                </field>
+                <field	
+                        name="showonlyimg"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWONLYWITHIMG_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWONLYWITHIMG_DESC" >
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                </field>
+                <field	
+                        name="showimgicons"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWSPECIALICONS_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWSPECIALICONS_DESC" >
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                </field>
+                <field	
+                        name="showyear"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWYEAR_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SHOWYEAR_DESC" >
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="targetlink"
+                        type="list"
+			default="_self"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_OPEN_LINK_TEXT"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_OPEN_LINK_DESC" >
+                        <option value="_blank">_blank</option>
+                        <option value="_self">_self</option>
+                        <option value="_parent">_parent</option>
+                        <option value="_top">_top</option>
+                </field>
+            </fieldset>
+            <fieldset name="expslideshow" label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_FIELDSET">
+                <field name="spacer_slide" type="spacer" class="text"
+					label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SPACER_SLIDE_LABEL"
+				/>
+                <field	
+                        name="fx"
+                        type="list"
+			default="random"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SLIDESHOW_EFFECT_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SLIDESHOW_EFFECT_DESC" >
+                        <option value="random">random</option>
+                        <option value="simpleFade">simpleFade</option>
+                        <option value="curtainTopLeft">curtainTopLeft</option>
+                        <option value="curtainTopRight">curtainTopRight</option>
+                        <option value="curtainBottomLeft">curtainBottomLeft</option>
+                        <option value="curtainBottomRight">curtainBottomRight</option>
+                        <option value="curtainSliceLeft">curtainSliceLeft</option>
+                        <option value="curtainSliceRight">curtainSliceRight</option>
+                        <option value="blindCurtainTopLeft">blindCurtainTopLeft</option>
+                        <option value="blindCurtainTopRight">blindCurtainTopRight</option>
+                        <option value="blindCurtainBottomLeft">blindCurtainBottomLeft</option>
+                        <option value="blindCurtainBottomRight">blindCurtainBottomRight</option>
+                        <option value="blindCurtainSliceBottom">blindCurtainSliceBottom</option>
+                        <option value="blindCurtainSliceTop">blindCurtainSliceTop</option>
+                        <option value="stampede">stampede</option>
+                        <option value="mosaic">mosaic</option>
+                        <option value="mosaicReverse">mosaicReverse</option>
+                        <option value="mosaicRandom">mosaicRandom</option>
+                        <option value="mosaicSpiral">mosaicSpiral</option>
+                        <option value="mosaicSpiralReverse">mosaicSpiralReverse</option>
+                        <option value="topLeftBottomRight">topLeftBottomRight</option>
+                        <option value="bottomRightTopLeft">bottomRightTopLeft</option>
+                        <option value="bottomLeftTopRight">bottomLeftTopRight</option>
+                        <option value="bottomLeftTopRight">bottomLeftTopRight</option>
+                </field>
+                <field
+                        name="alignment"
+                        type="list"
+                        default="center"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ALIGNMENT_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ALIGNMENT_DESC">
+                    <option value="topLeft">topLeft</option>
+                    <option value="topCenter">topCenter</option>
+                    <option value="topRight">topRight</option>
+                    <option value="centerLeft">centerLeft</option>
+                    <option value="center">center</option>
+                    <option value="centerRight">centerRight</option>
+                    <option value="bottomLeft">bottomLeft</option>
+                    <option value="bottomCenter">bottomCenter</option>
+                    <option value="bottomRight">bottomRight</option>
+                </field>
+                <field
+                        name="autoAdvance"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_AUTOADVANCE_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_AUTOADVANCE_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="mobileAutoAdvance"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBILEAUTOADVANCE_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBILEAUTOADVANCE_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="barDirection"
+                        type="list"
+                        default="leftToRight"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_BARDIRECTION_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_BARDIRECTION_DESC">
+                    <option value="leftToRight">leftToRight</option>
+                    <option value="rightToLeft">rightToLeft</option>
+                    <option value="topToBottom">topToBottom</option>
+                    <option value="bottomToTop">bottomToTop</option>
+                </field>
+                <field
+                        name="barPosition"
+                        type="list"
+                        default="bottom"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_BARPOSITION_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_BARPOSITION_DESC">
+                    <option value="left">left</option>
+                    <option value="right">right</option>
+                    <option value="top">top</option>
+                    <option value="bottom">bottom</option>
+                </field>
+                <field
+                        name="cols"
+                        type="text"
+                        default="6"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_COLS_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_COLS_DESC" />
+                <field
+                        name="easing"
+                        type="text"
+                        default="easeInOutExpo"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_EASING_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_EASING_DESC" />
+                <field
+                        name="mobileEasing"
+                        type="text"
+                        default=""
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBEASING_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBEASING_DESC" />
+                <field
+                        name="mobileFx"
+                        type="text"
+                        default=""
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBFX_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBFX_DESC" />
+                <field
+                        name="gridDifference"
+                        type="text"
+                        default="250"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_GRIDDIFF_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_GRIDDIFF_DESC" />
+                <field
+                        name="height"
+                        type="text"
+                        default="50%"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_HEIGHT_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_HEIGHT_DESC" />
+                <field
+                        name="hover"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_HOVER_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_HOVER_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="loader"
+                        type="list"
+                        default="pie"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADER_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADER_DESC">
+                    <option value="pie">pie</option>
+                    <option value="bar">bar</option>
+                    <option value="none">none</option>
+                </field>
+                <field
+                        name="loaderColor"
+                        type="text"
+                        default="#eeeeee"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERCOLOR_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERCOLOR_DESC" />
+                <field
+                        name="loaderBgColor"
+                        type="text"
+                        default="#222222"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERBGCOLOR_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERBGCOLOR_DESC" />
+                <field
+                        name="loaderOpacity"
+                        type="text"
+                        default=".8"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADEROPACITY_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADEROPACITY_DESC" />
+                <field
+                        name="loaderPadding"
+                        type="text"
+                        default="2"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERPADDING_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERPADDING_DESC" />
+                <field
+                        name="loaderStroke"
+                        type="text"
+                        default="7"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERSTROKE_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_LOADERSTROKE_DESC" />
+                <field
+                        name="minHeight"
+                        type="text"
+                        default="200px"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MINHEIGHT_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MINHEIGHT_DESC" />
+                <field
+                        name="navigationHover"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_NAVHOVER_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_NAVHOVER_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="mobileNavHover"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBNAVHOVER_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_MOBNAVHOVER_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="opacityOnGrid"
+                        type="list"
+                        default="false"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_OPACITYONGRID_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_OPACITYONGRID_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="overlayer"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_OVERLAYER_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_OVERLAYER_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="pagination"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PAGINATION_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PAGINATION_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="pauseOnClick"
+                        type="list"
+                        default="true"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PAUSEONCLICK_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PAUSEONCLICK_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="pieDiameter"
+                        type="text"
+                        default="38"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PIEDIAMETER_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PIEDIAMETER_DESC" />
+                <field
+                        name="piePosition"
+                        type="list"
+                        default="rightTop"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PIEPOSITION_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PIEPOSITION_DESC">
+                    <option value="rightTop">rightTop</option>
+                    <option value="leftTop">leftTop</option>
+                    <option value="leftBottom">leftBottom</option>
+                    <option value="rightBottom">rightBottom</option>
+                </field>
+                <field
+                        name="portrait"
+                        type="list"
+                        default="false"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PORTRAIT_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_PORTRAIT_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="rows"
+                        type="text"
+                        default="4"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ROWS_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_ROWS_DESC" />
+                <field
+                        name="slicedCols"
+                        type="text"
+                        default="12"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_CLICEDCOLS_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_CLICEDCOLS_DESC" />
+                <field
+                        name="slicedRows"
+                        type="text"
+                        default="8"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_CLICEDROWS_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_CLICEDROWS_DESC" />
+                <field
+                        name="slideOn"
+                        type="list"
+                        default="random"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SLIDEON_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SLIDEON_DESC">
+                    <option value="next">next</option>
+                    <option value="prev">prev</option>
+                    <option value="random">random</option>
+                </field>
+                <field
+                        name="thumbnails"
+                        type="list"
+                        default="false"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_THUMBINALS_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_THUMBINALS_DESC">
+                    <option value="true">JTRUE</option>
+                    <option value="false">JFALSE</option>
+                </field>
+                <field
+                        name="time"
+                        type="text"
+                        default="7000"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_TIME_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_TIME_DESC" />
+                <field
+                        name="transPeriod"
+                        type="text"
+                        default="1500"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_TRANSPERIOD_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_TRANSPERIOD_DESC" />
+           </fieldset>
+           
+            <fieldset name="expslideshowimg" label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_DEF_IMG_FIELDSET">
+                <field name="spacer_defimg" type="spacer" class="text"
+					label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_SPACER_DEFIMG_LABEL"
+				/>
+                <field
+                        name="defimg_patch"
+                        type="text"
+                        default=""
+                        size="40"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_DEFIMG_PATCH_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_DEFIMG_PATCH_DESC" />
+                <field
+                        name="defimg_tmbpatch"
+                        type="text"
+                        default=""
+                        size="40"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_DEFIMG_TMBPATCH_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_DEFIMG_TMBPATCH_DESC" />
+                <field
+                        name="defimg_code"
+                        type="textarea"
+                        filter="safehtml"
+                        rows="10"
+                        cols="40"
+                        label="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_DEFIMG_CODE_LABEL"
+                        description="MOD_EXPAUTOSPRO_SLIDESHOW_CAMERA_DEFIMG_CODE_DESC" />
+            </fieldset>
+            
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                        name="cache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="text"
+                        default="900"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

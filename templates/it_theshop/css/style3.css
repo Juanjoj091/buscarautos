@@ -1,0 +1,142 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 -2011 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+/* cart module */
+
+#jshop_module_cart .lof_jshop_top {
+	background-color:#1D588A;
+	box-shadow:1px 1px 0 #1D588A, -1px -1px 0 #1D588A }
+	
+#jshop_module_cart .lof_jshop_bottom {
+	background-color:#1D588A;
+	box-shadow:1px 1px 0 #1D588A, -1px -1px 0 #1D588A }
+
+	
+	#jshop_module_cart:after {
+		background-image:url(../images/styles/style3/cart_pin.png);
+		width:55px;
+		height:55px;
+		top:-36px;
+		right:-44px;}
+	
+
+/* icemegamenu */
+div.icemegamenu ul#icemegamenu li span.icemega_desc {
+	background-color:#1D588A;
+	background-image: -moz-linear-gradient(#2572B4, #1D588A);
+	background-image: -webkit-linear-gradient(#2572B4, #1D588A); 
+	background-image: -o-linear-gradient(#2572B4, #1D588A);
+	background-image: linear-gradient(#2572B4, #1D588A);}
+				
+
+div.icemegamenu ul#icemegamenu li span.icemega_desc:after{
+    border-top-color: #1D588A;}
+
+
+/* typography.css */
+	
+	
+/* layout.css */	
+
+		
+/* joomla.css */
+
+
+ 
+/* modules.css */	
+.col-module .col-module-style1 .col-module-header  {
+	background-color:#1D588A;
+	background-image: -moz-linear-gradient(top, #2572B4, #1D588A 60%, #1D588A);
+	background-image: -webkit-linear-gradient(top, #2572B4, #1D588A 60%, #1D588A); 
+	background-image: -o-linear-gradient(top, #2572B4, #1D588A 60%, #1D588A);
+	box-shadow:0 5px 5px #C0D0E5;}
+
+.col-module .col-module-style1 .col-module-header-arrow {
+	border-top-color:#1D588A}
+	
+.col-module .col-module-style1 h3.mod-title span {
+	color:#8AA9CF;
+	text-shadow:none;}
+
+
+.col-module .col-module-style2 .col-module-header  {
+	background-color:#A46622;
+	background-image: -moz-linear-gradient(top, #CE802A, #A46622 60%, #A46622);
+	background-image: -webkit-linear-gradient(top, #CE802A, #A46622 60%, #A46622); 
+	background-image: -o-linear-gradient(top, #CE802A, #A46622 60%, #A46622);
+	box-shadow:0 5px 5px #EDDDC6;}
+
+.col-module .col-module-style2 .col-module-header-arrow {
+	border-top-color:#A46622}
+	
+.col-module .col-module-style2 h3.mod-title span {
+	color:#DECE94;}
+	
+	
+
+#footer .moduletable-style1 h3.mod-title {
+	background-color:#1D588A;}
+
+#footer .moduletable-style1 h3.mod-title .col-module-header-arrow {
+	border-top-color:#1D588A}
+	
+#footer .moduletable-style1 h3.mod-title span  {
+	color:#8AC6CF;}
+
+
+#footer .moduletable-style2 h3.mod-title {
+	background-color:#A46622;}
+
+#footer .moduletable-style2 h3.mod-title .col-module-header-arrow {
+	border-top-color:#A46622}
+	
+#footer .moduletable-style2 h3.mod-title span  {
+	color:#DECE94;}
+		
+	
+			
+		
+ /* forms.css */
+a.cart,
+button.cart {		
+	background:#1D588A;
+	background: -moz-linear-gradient(top, #2572B4, #1D588A);
+	background: -webkit-linear-gradient(top, #2572B4, #1D588A);
+	background: -ms-linear-gradient(top, #2572B4, #1D588A);
+	background: -o-linear-gradient(top, #2572B4, #1D588A);
+	background: linear-gradient(top, #2572B4, #1D588A);
+	border-color:#1D588A}
+	a.cart:focus,
+	button.cart:focus { background:#1D588A;}
+
+
+
+/* modules.css */
+
+	/* icetabs */
+	.ice-tabs-candy .ice-next, 
+	.ice-tabs-candy .ice-previous {
+		background-image:url(../images/styles/style3/arrows.png); }
+	
+	/* icecarousel */
+	.ice-carousel .ice-navigator-outer ul.ice-navigator li span { 
+		background-image:url(../images/styles/style3/dot.png)}
+	.ice-carousel .ice-next, 
+	.ice-carousel .ice-previous {
+		background-image:url(../images/styles/style3/arrows.png); }
+	
+	/* iceaccordion */
+	.iceaccordion-paging .iceaccordion-prev,
+	.iceaccordion-paging .iceaccordion-next{ 
+		background-image:url(../images/styles/style3/accordion_arrows.png)}
+	
+	
+/* offline and not found */

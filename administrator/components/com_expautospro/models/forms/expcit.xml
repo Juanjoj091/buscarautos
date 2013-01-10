@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: category.xml EXP Autos Pro Category !-->
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_expautospro/models/fields"
+	>
+		<field name="id" type="text" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL"
+                        description ="JGLOBAL_FIELD_ID_DESC" />
+		<field name="catid" type="expcities"
+			label="COM_EXPAUTOSPRO_STATE_TEXT"
+                        description="COM_EXPAUTOSPRO_STATESELECT_DESC"
+                        required="true" />
+		<field name="city_name" type="text" class="inputbox"
+			size="40" label="COM_EXPAUTOSPRO_CITS_NAME_TEXT"
+			description="COM_EXPAUTOSPRO_CITS_NAME_DESC" required="true" />
+		<field name="city_zip" type="text" class="inputbox"
+			size="40" label="COM_EXPAUTOSPRO_CITS_ZIPNAME_TEXT"
+			description="COM_EXPAUTOSPRO_CITS_ZIPNAME_DESC" />
+		<field name="city_state" type="text" class="inputbox"
+			size="40" label="COM_EXPAUTOSPRO_CITS_STATENAME_TEXT"
+			description="COM_EXPAUTOSPRO_CITS_STATENAME_DESC" />
+		<field name="city_latitude" type="text" class="inputbox"
+			size="40" label="COM_EXPAUTOSPRO_CITS_LATNAME_TEXT"
+			description="COM_EXPAUTOSPRO_CITS_LATNAME_DESC" />
+		<field name="city_longitude" type="text" class="inputbox"
+			size="40" label="COM_EXPAUTOSPRO_CITS_LONGNAME_TEXT"
+			description="COM_EXPAUTOSPRO_CITS_LONGNAME_DESC" />
+		<field name="city_county" type="text" class="inputbox"
+			size="40" label="COM_EXPAUTOSPRO_CITS_COUNTRNAME_TEXT"
+			description="COM_EXPAUTOSPRO_CITS_COUNTRNAME_DESC" />
+		<field name="state" type="list"
+			label="JGLOBAL_STATE" description="JFIELD_PUBLISHED_DESC"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+		<field name="ordering"
+			type="ordering"
+			class="inputbox"
+			database="cities"
+			wherefield="catid"
+			label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC"
+		/>
+		<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"
+			description="COM_EXPAUTOSPRO_LANGUAGE_DESC" class="inputbox"
+		>
+			<option value="*">JALL</option>
+		
+		</field>
+	</fieldset>
+</form>

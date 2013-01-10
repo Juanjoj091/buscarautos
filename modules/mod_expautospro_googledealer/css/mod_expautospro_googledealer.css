@@ -1,0 +1,155 @@
+
+/****************************************************************************************\
+ **   @name		EXP Autos  2.0                                                  **
+ **   @package          Joomla 1.6                                                      **
+ **   @author		EXP TEAM::Alexey Kurguz (Grusha)                                **
+ **   @copyright	Copyright (C) 2005 - 2011  EXP TEAM::Alexey Kurguz (Grusha)     **
+ **   @link             http://www.feellove.eu                                          **
+ **   @license		Commercial License                                              **
+ \****************************************************************************************/
+
+.modexpgoogledealers{
+    margin: 0px 0 0px 0;
+}
+
+.modexpgoogledealers .expautos_images_clear{
+    clear: both;
+    padding:0;
+    margin:0;
+}
+.modexpgoogledealers .expgoogledealer{
+    width:300px
+}
+
+.modexpgoogledealers .expgoogledealer_img img{
+    float: left;
+    border: 1px solid #EAEAEA;
+    padding: 1px;
+    margin: 9px 0 0 0;
+}
+
+.modexpgoogledealers .expgoogledealer_right{
+    float: right;
+    padding: 0 5px 0 5px;
+    text-align: left;
+}
+
+.modexpgoogledealers .expgoogledealer_right a{
+    color:#000;
+}
+
+.modexpgoogledealers .expgoogledealer_right a:hover{
+    color:#CC3300;
+}
+
+.modexpgoogledealers .expgoogledealer_right p.expgoogledealer_top{
+    float: left;
+    padding: 3px;
+    text-align: left;
+    background: #EAEAEA;
+    width:98%;
+}
+
+.modexpgoogledealers .expgoogledealer_right p.expgoogledealer_middle{
+    margin:1px 0;
+    padding:0;
+}
+
+.modexpgoogledealers .expgoogledealer_right p.expgoogledealer_middle span.expgmd_span{
+    font-weight: bold;
+}
+
+.modexpgoogledealers .expgoogledealer_price{
+    padding: 3px;
+    text-align: center;
+    background: #EAEAEA;
+    width:98%;
+}
+
+
+.modexpgoogledealers .expgmapdealersleft{
+    float: left;
+    margin: 0px 0 0 0;
+}
+.modexpgoogledealers .expgmapdealersright{
+    float: right;
+}
+.modexpgoogledealers .expgmapdealersright p{
+    margin: 0 0 10px 0;
+}
+
+.modexpgoogledealers .expgmapdealersright p.expautospro_gmdealers{
+    margin: 0 0 10px 0;
+}
+
+.modexpgoogledealers fieldset.expsutospro_search_fieldset{
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogledealers p label {  
+    display: block;
+    font-weight: bold;
+}
+
+.modexpgoogledealers p select {  
+    width:200px;
+}
+
+.modexpgoogledealers p input {  
+    width:200px;
+}
+
+.modexpgoogledealers p.expdouble span{
+    float: left;
+}
+
+.modexpgoogledealers .expclear {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogledealers p.expdouble span.expdouble_first{
+    margin: 0 20px 0 0;
+}
+
+.modexpgoogledealers p label.expdouble_label {
+    width: 90px;
+}
+
+.modexpgoogledealers p select.modexpsearch_year {
+    width:90px;
+}
+
+.modexpgoogledealers p input.modexpsearch_price {
+    width:85px;
+}
+
+.modexpgoogledealers p.searchcheckbox{
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.modexpgoogledealers p.searchcheckbox label {
+    display: inline;
+    width:55px;
+}
+
+.modexpgoogledealers p.searchcheckbox input {
+    width:20px;
+    margin: 0 50px 0 0;
+}
+
+.modexpgoogledealers .expdisplay_none{
+    display: none;
+}
+
+.modexpgoogledealers span.explinkshow{
+    margin: 5px 0;
+}
+
+.modexpgoogledealers .expgnomap{
+    
+}

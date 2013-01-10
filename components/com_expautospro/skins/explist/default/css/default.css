@@ -1,0 +1,357 @@
+
+/****************************************************************************************\
+ **   @name		EXP Autos  2.0                                                  **
+ **   @package          Joomla 1.6                                                      **
+ **   @author		EXP TEAM::Alexey Kurguz (Grusha)                                **
+ **   @copyright	Copyright (C) 2005 - 2011  EXP TEAM::Alexey Kurguz (Grusha)     **
+ **   @link             http://www.feellove.eu                                          **
+ **   @license		Commercial License                                              **
+ \****************************************************************************************/
+
+
+#expautospro table.explist{
+    border-spacing: 2px;
+    border-collapse: separate;
+    width: 100%;
+}
+
+#expautospro table.explist th {
+    border-width: 1px;
+    padding: 1px;
+    border-style: inset;
+    border-color: gray;
+    background-color: #444;
+    color: #FFF;
+    text-align: center;
+}
+
+#expautospro table.explist th a{
+    text-decoration: underline;
+    color: #FFF;
+}#expautospro table.explist th a:hover{
+    color: #EAEAEA;
+}
+
+#expautospro table td{
+    border: none;
+    text-align: center;
+}
+
+#expautospro table tr{
+    border: none;
+}
+
+#expautospro .photo {
+    position: relative;
+    float: left;
+}
+
+#expautospro div.commercial span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background: url(../images/commercial_s.png) no-repeat;
+}
+
+#expautospro div.top span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: url(../images/top_s.png) no-repeat;
+}
+
+#expautospro div.special span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: url(../images/special_s.png) no-repeat;
+}
+
+#expautospro div.solid span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: url(../images/sold_s.png) no-repeat;
+}
+
+#expautospro div.expimgcount span.newdate {
+    width: 25px;
+    height: 11px;
+    float:right;
+    margin: 1px 0 0 0;
+    text-indent:-8008px;
+    background: url(../images/newdate.png) no-repeat right;
+}
+
+#expautospro div.expimgcount span.expreserved {
+    width: 45px;
+    height: 11px;
+    float:right;
+    margin: 1px 0 0 0;
+    text-indent:-8008px;
+    background: url(../images/reserved.png) no-repeat right;
+}
+
+.expimgcount {
+    clear: both;
+    text-align: left;
+    font-size: 10px;
+}
+
+.explistrow1{
+    background: #EEE;
+}
+
+.explistrow0{
+}
+
+#expautospro table tr.commercial td {
+    border-bottom: 1px solid #006699;
+    border-top: 1px solid #006699;
+}
+
+#expautospro table tr.top td {
+    border-bottom: 1px solid #006600;
+    border-top: 1px solid #006600;
+}
+
+#expautospro table tr.special td {
+    border-bottom: 1px solid #CC0000;
+    border-top: 1px solid #CC0000;
+}
+
+#expautospro table tr.solid td {
+    border-bottom: 1px solid #FF9900;
+    border-top: 1px solid #FF9900;
+}
+
+table.explist th.expautos_th_left{
+    text-align:left;
+}
+
+.expautos_list_markmod{
+    text-align:left;
+    margin: 0 10px;
+}
+
+.expautos_list_markmod_bottom{
+    text-align:left;
+    margin: 0 10px;    
+}
+
+#expautospro table tr.expautoslist_bottom{
+    height: 30px;
+}
+
+#expautospro table tr.expautoslist_bottom td{
+    border-bottom: 1px solid #CCC;
+}
+
+.exp_autos_list_userinfo{
+    padding:0 0 20px 0;
+}
+
+.exp_autos_list_userinfo_left{
+}
+
+.expautos_user_ullist{
+}
+
+.expautos_user_ullist li{
+    list-style:none;
+}
+
+.expautos_user_lilist{
+}
+
+.expautos_user_lispanlist{
+}
+
+.expautos_user_lilist .expautos_user_lispanlist{
+    font-weight:bold;
+}
+
+ul.expautos_user_ullist li.expuser_otherinfo {
+}
+
+ul.expautos_user_ullist li.expuser_otherinfo{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#expautospro .expautos_date{
+    margin: 5px 0 0 0;
+}
+
+#expautospro .expautos_small{
+    font-size: 10px;
+}
+
+/****** User link style *****/
+.expautos_list_users_link span {
+    float:left;
+    background:#FFFFF0;
+    border:1px solid #FF6600;
+    margin:5px;
+    padding:3px 5px;
+    text-align:center;
+}
+
+.expautos_list_users_link span.expautos_list_payspecial {
+    background:#C3DCBF;
+    border:1px solid #000;
+}
+
+.expautos_list_users_link span.expautos_list_payadd {
+    background-color:#C3DCBF;
+    border:1px solid #000;
+}
+
+.expautos_list_users_link span.exppublished {
+    background-image: url(../images/published.png);
+    background-repeat: no-repeat;
+    background-position: 2% 50% ;
+}
+
+.expautos_list_users_link span.expunpublished {
+    background-image: url(../images/unpublished.png);
+    background-repeat: no-repeat;
+    background-position: 4% 50% ;
+}
+
+.expautos_list_users_link span.expautos_list_payadd strong{
+    margin: 0 0 0 20px;
+}
+
+/****** End User link style *****/
+
+
+/*********** Module Position Middle ************/
+.expautos_list_markmod_modules{
+   float:left;
+   margin: 0 10px;
+}
+/*********** End Module Position Middle ************/
+
+/*********** Pagination ****************/
+
+/* Limit Box */
+#explimitbox{
+    margin: 10px 0 0px 0px;
+    text-align: left;
+}
+/* End Limit Box */
+
+/* Result Count */
+#expresultcounter{
+    margin: 10px 0 0px 0px;
+    text-align: left;
+}
+/* End Result Count */
+
+/* Page Links */
+
+div#exppagelinks{
+    margin: 10px 0 0px 0px;
+}
+
+div#exppagelinks ul{
+    margin:0; 
+    padding:0;
+}
+
+div#exppagelinks ul li{
+    float:left;
+    border:0; 
+    margin:0; 
+    padding:0;
+    font-size:11px;
+    list-style:none;
+    margin-right:2px;
+}
+
+div#exppagelinks ul li a{
+    border:solid 1px #444;
+    margin-right:2px;
+}
+
+div#exppagelinks ul li span.pagenav {
+    border:solid 1px #DEDEDE;
+    color:#888888;
+    display:block;;
+    float:left;
+    font-weight:bold;
+    margin-right:2px;
+    padding:3px 4px;
+}
+
+div#exppagelinks ul li.pagination-start a,
+div#exppagelinks ul li.pagination-prev a,
+div#exppagelinks ul li.pagination-next a,
+div#exppagelinks ul li.pagination-end a {
+    font-weight:bold;
+}
+
+div#exppagelinks a:link,
+div#exppagelinks a:visited {
+    color:#FFF;
+    background-color: #444;
+    display:block;
+    float:left;
+    padding:3px 6px;
+    text-decoration:none;
+}
+
+div#exppagelinks a:hover{
+    border:solid 1px #444;
+    background-color: #606060;
+}
+
+div#exppagelinks .limit{
+    float: left;
+}
+
+div#exppagelinks .counter {
+    clear: both;
+    margin: 10px 0 0 0;
+}
+/* End Page Links */
+
+/* Page Counter */
+#exppagescounter{
+    margin: 10px 0 10px 0px;
+    text-align: left;
+}
+/* End Page Counter */
+/***************** End Pagination ********************/
+
+/***************** Module position  class ************/
+#expautospro .explistuserposition{
+    
+}
+
+/**************** ShortList ******************/
+#expautospro .expshortlist_lspage{
+    text-align: right;
+    font-size: 11px;
+}
+
+/************** Photo Img *********************/
+.expuser_img{
+    float:right;
+    padding: 2px;
+    border: 1px solid #CCC;
+    margin: 10px 0 0 0;
+}

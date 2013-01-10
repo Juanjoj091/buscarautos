@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site"
+	method="upgrade"
+>
+    <!-- Name of the Module -->
+    <name>mod_expautospro_mortgage</name> 
+ 
+    <!-- Name of the Author -->
+    <author>Alexey Kurguz (Grusha)</author> 
+ 
+    <!-- Version Date of the Module -->
+    <creationDate>2010-07-22</creationDate> 
+ 
+    <!-- Copyright information -->
+    <copyright>All rights reserved by EXP Team 2006 - 2011.</copyright> 
+ 
+    <!-- License Information -->
+    <license>Commercial</license> 
+ 
+    <!-- Author's email address -->
+    <authorEmail>info@feellove.eu</authorEmail> 
+ 
+    <!-- Author's website -->
+    <authorUrl>www.feellove.eu</authorUrl> 
+ 
+    <!-- Module version number -->
+    <version>1.0.0</version> 
+ 
+    <!-- Description of what the module does -->
+    <description>MOD_EXPAUTOSPRO_MORTGAGE_XML_DESCRIPTION</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+    <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+        <filename module="mod_expautospro_mortgage">mod_expautospro_mortgage.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+    </files>
+ 
+	<languages>
+		<language tag="en-GB">en-GB.mod_expautospro_mortgage.ini</language>
+		<language tag="en-GB">en-GB.mod_expautospro_mortgage.sys.ini</language>
+	</languages>
+ 
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+					name="minfpayment"
+					type="text"
+                                        default="0" 
+                                        label="MOD_EXPAUTOSPRO_MORGAGE_MINPERCENT_TEXT"
+                                        description="MOD_EXPAUTOSPRO_MORGAGE_MINPERCENT_DESC" />
+                <field
+					name="maxfpayment" 
+                                        type="text" default="70" 
+                                        label="MOD_EXPAUTOSPRO_MORGAGE_MAXPERCENT_TEXT" 
+                                        description="MOD_EXPAUTOSPRO_MORGAGE_MAXPERCENT_DESC" />
+                <field
+					name="deffpayment" 
+                                        type="text" 
+                                        default="10" 
+                                        label="MOD_EXPAUTOSPRO_MORGAGE_DEFPERCENT_TEXT" 
+                                        description="MOD_EXPAUTOSPRO_MORGAGE_DEFPERCENT_DESC" />
+                <field
+					name="minperiod" 
+                                        type="text" 
+                                        default="12" 
+                                        label="MOD_EXPAUTOSPRO_MORGAGE_MINPERIOD_TEXT" 
+                                        description="MOD_EXPAUTOSPRO_MORGAGE_MINPERIOD_DESC" />
+                <field
+					name="maxperiod" 
+                                        type="text" default="84" 
+                                        label="MOD_EXPAUTOSPRO_MORGAGE_MAXPERIOD_TEXT" 
+                                        description="MOD_EXPAUTOSPRO_MORGAGE_MAXPERIOD_DESC" />
+                <field
+					name="defperiod" 
+                                        type="text" 
+                                        default="60" 
+                                        label="MOD_EXPAUTOSPRO_MORGAGE_DEFPERIOD_TEXT" 
+                                        description="MOD_EXPAUTOSPRO_MORGAGE_DEFPERIOD_DESC" />
+                <field
+					name="definterest" 
+                                        type="text" 
+                                        default="7.25" 
+                                        label="MOD_EXPAUTOSPRO_MORGAGE_DEFINTEREST_TEXT" 
+                                        description="MOD_EXPAUTOSPRO_MORGAGE_DEFINTEREST_DESC" />
+            </fieldset>
+            <fieldset
+				name="advanced">
+                <field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                                        value="1">JGLOBAL_USE_GLOBAL
+                    </option>
+                    <option
+                                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+                    </option>
+                </field>
+
+                <field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

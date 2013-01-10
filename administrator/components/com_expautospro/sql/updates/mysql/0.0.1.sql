@@ -1,0 +1,1 @@
+INSERT INTO `#__expautos_config` (`version`) VALUES ('21');

@@ -1,0 +1,93 @@
+
+/****************************************************************************************\
+ **   @name		EXP Autos  2.0                                                  **
+ **   @package          Joomla 1.6                                                      **
+ **   @author		EXP TEAM::Alexey Kurguz (Grusha)                                **
+ **   @copyright	Copyright (C) 2005 - 2011  EXP TEAM::Alexey Kurguz (Grusha)     **
+ **   @link             http://www.feellove.eu                                          **
+ **   @license		Commercial License                                              **
+ \****************************************************************************************/
+
+.modexpautospro_search{
+    
+}
+
+.modexpautospro_search fieldset.expsutospro_search_fieldset{
+    padding: 0;
+    margin: 0;
+}
+
+.modexpautospro_search p label {  
+    display: block;
+    font-weight: bold;
+}
+
+.modexpautospro_search p select {  
+    width:200px;
+}
+
+.modexpautospro_search p input {  
+    width:200px;
+}
+
+.modexpautospro_search p.expdouble span{
+    float: left;
+}
+
+.modexpautospro_search .expclear {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.modexpautospro_search p.expdouble span.expdouble_first{
+    margin: 0 20px 0 0;
+}
+
+.modexpautospro_search p label.expdouble_label {
+    width: 90px;
+}
+
+.modexpautospro_search p select.modexpsearch_year {
+    width:90px;
+}
+
+.modexpautospro_search p input.modexpsearch_price {
+    width:85px;
+}
+
+.modexpautospro_search p.searchcheckbox{
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.modexpautospro_search p.searchcheckbox label {
+    display: inline;
+    width:55px;
+}
+
+.modexpautospro_search p.searchcheckbox input {
+    width:20px;
+    margin: 0 50px 0 0;
+}
+
+.modexpautospro_search .expdisplay_none{
+    display: none;
+}
+
+.modexpautospro_search span.explinkshow{
+    margin: 5px 0;
+}
+
+/* Version 1.0.1 */
+
+.modexpautospro_search p.expautospro_cattext{
+}
+
+.modexpautospro_search span.expcat_span{
+}
+
+.modexpautospro_search span.expcat_span_name{
+    font-weight: bold;
+}

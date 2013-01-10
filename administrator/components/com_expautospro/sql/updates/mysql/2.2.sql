@@ -1,0 +1,1 @@
+UPDATE `#__expautos_config` SET `version`='2.1' WHERE id=1;

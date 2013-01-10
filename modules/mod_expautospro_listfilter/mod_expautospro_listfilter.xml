@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+    <!-- Name of the Module -->
+    <name>MOD_EXPAUTOSPRO_SEARCH_LISTFILTER</name> 
+ 
+    <!-- Name of the Author -->
+    <author>Alexey Kurguz (Grusha)</author> 
+ 
+    <!-- Version Date of the Module -->
+    <creationDate>2012-04-06</creationDate> 
+ 
+    <!-- Copyright information -->
+    <copyright>All rights reserved by EXP Team 2006 - 2012.</copyright> 
+ 
+    <!-- License Information -->
+    <license>Commercial</license> 
+ 
+    <!-- Author's email address -->
+    <authorEmail>info@feellove.eu</authorEmail> 
+ 
+    <!-- Author's website -->
+    <authorUrl>www.feellove.eu</authorUrl> 
+ 
+    <!-- Module version number -->
+    <version>2.1</version> 
+ 
+    <!-- Description of what the module does -->
+    <description>MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_XML_DESCRIPTION</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+    <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+        <filename module="mod_expautospro_listfilter">mod_expautospro_listfilter.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+    </files>
+ 
+	<languages>
+		<language tag="en-GB">en-GB.mod_expautospro_listfilter.ini</language>
+		<language tag="en-GB">en-GB.mod_expautospro_listfilter.sys.ini</language>
+	</languages>
+ 
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field	
+                        name="usecat"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_CAT_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_CAT_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="defcat"
+                        type="category"
+                        extension="com_expautospro"
+                        published="1"
+                        default="0"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_DEF_CAT_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_DEF_CAT_DESC" >
+                        <option value="0">JSELECT</option>
+                </field>
+                <field	
+                        name="allowedcat"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_ONLY_ALLOWED_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_ONLY_ALLOWED_DESC" >
+
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                </field>
+                <field	
+                        name="showcount"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_SHOWCOUNT_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_SHOWCOUNT_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usemakes"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_MAKES_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_MAKES_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usemodels"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_MODELS_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_MODELS_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usecondition"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_CONDITION_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_CONDITION_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usebodytype"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_BODYTYPE_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_BODYTYPE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useextrafield1"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXTRAFIELD1_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXTRAFIELD1_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useextrafield2"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXTRAFIELD2_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXTRAFIELD2_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useextrafield3"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXTRAFIELD3_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXTRAFIELD3_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usecolor"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_COLOR_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_COLOR_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useyear"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_YEAR_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_YEAR_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usefuel"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_FUEL_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_FUEL_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usedrive"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_DRIVE_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_DRIVE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usetrans"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_TRANS_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_TRANS_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usecountry"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_COUNTRY_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_COUNTRY_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useexpstate"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXPSTATE_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_EXPSTATE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usecity"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_CITY_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_CITY_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useuser"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_USER_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_USER_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useageof"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_AGEOF_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_AGEOF_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usesortby"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_SORTBY_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_SORTBY_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="useshowhide"
+                        type="list"
+			default="1"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_SHOWHIDE_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USE_SHOWHIDE_DESC" >
+
+                        <option value="1">JSHOW</option>
+                        <option value="0">JHIDE</option>
+                </field>
+                <field	
+                        name="usechosen"
+                        type="list"
+			default="0"
+                        label="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USECHOSEN_TEXT"
+                        description="MOD_EXPAUTOSPRO_SEARCH_LISTFILTER_USECHOSEN_DESC" >
+
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                </field>
+            </fieldset>
+            <fieldset
+                        name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                        name="cache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL
+                    </option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+                    </option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="text"
+                        default="900"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

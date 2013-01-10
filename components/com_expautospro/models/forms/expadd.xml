@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: EXP Autos Pro Add !-->
+<form>
+	<fieldset name="details"
+		addfieldpath="/components/com_expautospro/models/fields"
+	>
+		<field name="id" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC"
+                        type="hidden" />
+                <field name="user" 
+                        label="COM_EXPAUTOSPRO_USER_TEXT" 
+                        description="COM_EXPAUTOSPRO_SELECT_USER_TEXT" 
+                        type="hidden" />
+                <field name="state" 
+                        label="COM_EXPAUTOSPRO_PUBLISHED_TEXT" 
+                        description="COM_EXPAUTOSPRO_PUBLISHED_DESC" 
+                        type="hidden" />
+		<field name="catid" type="expjcat" extension="com_expautospro"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTCATEGORY_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTCATEGORY_DESC" 
+                        required="true"
+                        />
+                <field name="make" type="expmake"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTMAKE_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTMAKE_DESC"/>
+                <field name="model"  type="expmodel"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTMODEL_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTMODEL_DESC" />
+                <field name="checkmodel" type="checkbox"
+                        class="checkbox expcheckbox_left"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTYOURMODEL_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTYOURMODEL_DESC"
+                        onclick=" expchecktoggle('expyourmodel','jform_checkmodel','jformmodel')"
+                        default="0"
+                        />
+                <field name="expyourmodel" type="text"
+                        class="inputbox expdisplay_none"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTYOURMODEL_NAME_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTYOURMODEL_NAME_DESC" />
+                <field name="specificmodel" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSPECMODEL_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSPECMODEL_DESC" />
+                <field name="bodytype"  type="expselect"
+			database="bodytype"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTBODYTYPE_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTBODYTYPE_DESC" />
+		<field name="drive" type="categor"
+			database="drive"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTDRIVE_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTDRIVE_DESC"
+                        />
+		<field name="fuel" type="categor"
+			database="fuel"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTFUEL_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTFUEL_DESC"
+                        />
+		<field name="trans" type="categor"
+			database="trans"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTTRANSMISSION_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTTRANSMISSION_DESC"
+                        />
+                <field name="specifictrans" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSPECTRANSMISSION_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSPECTRANSMISSION_DESC" />
+                <field name="country" type="country"
+                        label="COM_EXPAUTOSPRO_CP_LIST_USER_COUNTRY_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_LIST_USER_COUNTRY_DESC" />
+                <field name="expstate"  type="selectstate"
+                        label="COM_EXPAUTOSPRO_CP_LIST_USER_STATE_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_LIST_USER_STATE_DESC" />
+                <field name="city"  type="cities"
+                        label="COM_EXPAUTOSPRO_CP_LIST_USER_CITY_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_LIST_USER_CITY_DESC" />
+                <field name="street" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_LIST_USER_STREET_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_LIST_USER_STREET_DESC" />
+                <field name="zipcode"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_CP_EXPUSER_DEALERINFO_ZIPCODE_TEXT"
+			description="COM_EXPAUTOSPRO_CP_EXPUSER_DEALERINFO_ZIPCODE_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+                <field name="latitude"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_GOOGLEMAP_LATITUDE_TEXT"
+			description="COM_EXPAUTOSPRO_GOOGLEMAP_LATITUDE_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+                <field name="longitude"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_GOOGLEMAP_LONGITUDE_TEXT"
+			description="COM_EXPAUTOSPRO_GOOGLEMAP_LONGITUDE_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+                <field name="extrafield1"  type="expselect"
+			database="extrafield1"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTRAFIELD1_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTRAFIELD1_DESC" />
+                <field name="extrafield2" type="categor"
+			database="extrafield2"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTRAFIELD2_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTRAFIELD2_DESC" 
+                        />
+                <field name="extrafield3" type="categor"
+			database="extrafield3" 
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTRAFIELD3_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTRAFIELD3_DESC" />
+		<field name="condition" type="categor"
+			database="condition"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTCONDITION_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTCONDITION_DESC"
+                        />
+		<field name="extcolor" type="categor"
+			database="color"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTCOLOR_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTEXTCOLOR_DESC"
+                        />
+                <field name="specificcolor" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSPECCOLOR_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSPECCOLOR_DESC" />
+                <field name="metalliccolor" type="radio"
+				label="COM_EXPAUTOSPRO_CP_EXPADD_CHOICEMETALLICCOLOR_TEXT"
+				description="COM_EXPAUTOSPRO_CP_EXPADD_CHOICEMETALLICCOLOR_DESC"
+				default="0" class="inputbox"
+			>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+                </field>
+		<field name="intcolor" type="categor"
+			database="color"
+			label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTINTCOLOR_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTINTCOLOR_DESC"
+                        />
+                <field name="month" type="expmonth"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTMONTH_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTMONTH_DESC"
+                        />
+                <field name="year" type="expyear"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTYEAR_TEXT" 
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTYEAR_DESC"
+                        />
+                <field name="vincode" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTVINCODE_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTVINCODE_DESC" />
+                <field name="mileage" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTMILEAGE_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTMILEAGE_DESC" />
+                <field name="displacement" type="expdisplacement"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_DISPLACEMENT_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_DISPLACEMENT_DESC" />
+                <field name="doors" type="expdoors"
+                        expnum="doors"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTDOORS_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTDOORS_DESC" />
+                <field name="seats" type="expdoors"
+                        expnum="seats"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_SELECTSEATS_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_SELECTSEATS_DESC" />
+                <field name="engine" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTENGINE_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTENGINE_DESC" />
+                <field name="co" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTCO2_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTCO2_DESC" />
+                <field name="fconsumcity" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTFCONSUMCITY_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTFCONSUMCITY_DESC" />
+                <field name="fconsumfreeway" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTFCONSUMFREEWAY_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTFCONSUMFREEWAY_DESC" />
+                <field name="fconsumcombined" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTFCONSUMCOMBINED_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTFCONSUMCOMBINED_DESC" />
+                <field name="adacceleration" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTACCELERATION_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTACCELERATION_DESC" />
+                <field name="maxspeed" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTMAXSPEED_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTMAXSPEED_DESC" />
+                <field name="length" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTLENGHT_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTLENGHT_DESC" />
+                <field name="width" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTWIDTH_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTWIDTH_DESC" />
+                <field name="unweight" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTUNWEIGHT_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTUNWEIGHT_DESC" />
+                <field name="grweight" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTGRWEIGHT_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTGRWEIGHT_DESC" />
+                <field name="stocknum" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSTOCKNUM_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTSTOCKNUM_DESC" />
+                <field name="embedcode" type="textarea"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTEMBEDCODE_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTEMBEDCODE_DESC"
+			cols="60"
+			rows="3" />
+                <field name="otherinfo" type="textarea"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTOTHERINFO_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTOTHERINFO_DESC"
+			cols="60"
+			rows="3" />
+                        <!--
+                <field name="otherinfo" type="editor"
+                        label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTOTHERINFO_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTOTHERINFO_DESC"
+			class="inputbox"
+			filter="safehtml"
+			buttons="false"
+                        width="200"
+			hide="readmore,pagebreak,article" />
+                        !-->
+                <field name="creatdate" type="calendar"
+			label="COM_EXPAUTOSPRO_ADMANAGER_CREATEDATE_TEXT" 
+                        description="COM_EXPAUTOSPRO_ADMANAGER_CREATEDATE_DESC"
+			class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+                <field name="expirdate" type="calendar"
+			label="COM_EXPAUTOSPRO_ADMANAGER_EXPIRDATE_TEXT" 
+                        description="COM_EXPAUTOSPRO_ADMANAGER_EXPIRDATE_DESC"
+			class="inputbox" size="22" format="%Y-%m-%d "
+			filter="user_utc" />
+                <field name="price" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTPRICE_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTPRICE_DESC" />
+                <field name="bprice" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTBPRICE_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTBPRICE_DESC" />
+                <field name="expprice" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_INSERTEXPPRICE_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_INSERTEXPPRICE_DESC" />
+                <field name="vattext" type="radio"
+				label="COM_EXPAUTOSPRO_CP_EXPADD_ICLUDEVATTEXT_TEXT"
+				description="COM_EXPAUTOSPRO_CP_EXPADD_ICLUDEVATTEXT_DESC"
+				default="0" class="inputbox"
+			>
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+                <field name="expfile"
+                                type="expfile"
+                                label="COM_EXPAUTOSPRO_CP_ADMANAGER_FILE_TEXT"
+                                description="COM_EXPAUTOSPRO_CP_ADMANAGER_FILE_DESC"
+                                />
+                <field name="hits" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_ADMANAGER_HITS_TEXT"
+                        description="COM_EXPAUTOSPRO_ADMANAGER_HITS_DESC" />
+                <field name="fcommercial" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGER_COMMERCIAL_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGER_COMMERCIAL_DESC"
+				default="0" class="inputbox"
+			>
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+                <field name="ftop" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGER_TOP_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGER_TOP_DESC"
+				default="0" class="inputbox"
+			>
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+                <field name="special" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGER_SPECIAL_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGER_SPECIAL_DESC"
+				default="0" class="inputbox"
+			>
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+                <field name="solid" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGER_SOLID_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGER_SOLID_DESC"
+				default="0" class="inputbox"
+			>
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+                <field name="expreserved" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGERS_STATUS_RESERVED_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGERS_STATUS_RESERVED_DESC"
+				default="0" class="inputbox"
+			>
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+                <field name="state" type="list"
+                        label="JGLOBAL_STATE" description="JFIELD_PUBLISHED_DESC"
+                        class="inputbox" size="1" default="1" >
+                    <option value="1">JPUBLISHED</option>
+                    <option value="0">JUNPUBLISHED</option>
+                    <option value="2">JARCHIVED</option>
+                    <option value="-2">JTRASHED</option>
+                </field>
+                <field name="access"
+                            type="accesslevel"
+                            label="JFIELD_ACCESS_LABEL"
+                            description="JFIELD_ACCESS_DESC"
+                            class="inputbox"
+                            size="1"
+                        />
+                <field name="ordering"
+                            type="ordering"
+                            class="inputbox"
+                            database="admanager"
+                            wherefield="catid"
+                            label="JFIELD_ORDERING_LABEL"
+                            description="JFIELD_ORDERING_DESC"
+                        />
+                <field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"
+                            description="COM_EXPAUTOSPRO_LANGUAGE_DESC" class="inputbox"
+                        >
+                    <option value="*">JALL</option>
+                </field>
+                <field name="equipment" type="expequipment"
+                        label="" 
+                        description=""
+                        />
+                <field name="expimages" type="expimages"
+                        label="" 
+                        description=""
+                        />
+	</fieldset>
+        <fields name="params">
+            <!--
+            <fieldset name="addparams"
+                            label="COM_EXPAUTOSPRO_CP_EXPADD_PARAMS_TEXT"
+                            >
+                 <field name="exptime" type="exptime"
+                        label="COM_EXPAUTOSPRO_PRICEFORTIME_TEXT" 
+                        description="COM_EXPAUTOSPRO_PRICEFORTIME_DESC"/>
+                <field name="addexample1" type="radio"
+                                    label="COM_EXPAUTOSPRO_CP_EXPADD_PARAMS_EXAMPLE1_TEXT"
+                                    description="COM_EXPAUTOSPRO_CP_EXPADD_PARAMS_EXAMPLE1_DESC"
+                                    default="1" class="inputbox"
+                            >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="addexample2" type="text"
+                        class="inputbox"
+                        size="40" label="COM_EXPAUTOSPRO_CP_EXPADD_PARAMS_EXAMPLE2_TEXT"
+                        description="COM_EXPAUTOSPRO_CP_EXPADD_PARAMS_EXAMPLE2_DESC" />
+            </fieldset>
+            -->
+        </fields>
+</form>

@@ -1,0 +1,216 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 - 2011 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+  
+---------------------------------------------------------------- */
+.ice-tabs-candy { 
+	position:relative;
+	overflow:hidden;
+	padding:10px; 
+	width:auto; 
+	height:auto;}
+	
+	.ice-tabs-candy li {
+		list-style-type:none!important;	}
+	
+		
+/* main flash */
+.ice-tabs-candy .ice-main-wapper{ 
+	overflow:hidden;
+	z-index:99;
+	position:absolute;}
+	
+	.ice-tabs-candy .ice-main-wapper .ice-main-item { 
+		overflow:hidden;
+		padding:0px;
+		margin:0px; 
+		height:100%;
+		background:#fff;
+		width:100%;
+		position:absolute;}
+		
+		.ice-tabs-candy .ice-main-wapper .ice-main-item .ice-description{
+			padding:0 0 0 10px}
+
+
+			.ice-tabs-candy .ice-main-wapper .ice-main-item .ice-description2 {
+				font-size:1.2em;
+				line-height:1.65em}
+				
+				.ice-tabs-candy .ice-main-wapper .ice-main-item h3.ice-title { 
+					line-height:1.35em;
+					clear:none;
+					font-size:2.4em;
+					padding:0;
+					margin:0 0 2px;}
+					
+					.ice-tabs-candy .ice-main-wapper .ice-main-item h3.ice-title a {
+						color:#555} 
+						
+					.ice-tabs-candy .ice-main-wapper .ice-main-item a.ice-readmore {}
+		
+			.ice-tabs-candy .ice-main-wapper .ice-main-item p {
+				margin-bottom:1.25em;}
+		
+		.ice-tabs-candy .ice-main-wapper .ice-main-item .ice-description img {
+			float:right;
+			margin:0 0 0 15px}	
+			
+			
+/* item navigator */
+.ice-tabs-candy .ice-navigator-wrapper {
+	position:relative;
+	border-top:1px dotted #ccc;
+	padding-top:10px;
+	overflow:hidden;}
+	
+
+	.ice-tabs-candy .ice-navigator-outer  { 
+		position:absolute; 
+		right:0;
+		top:0px;
+		z-index:3;
+		height:300px;
+		width:310px;
+		overflow:hidden }
+		 
+		.ice-tabs-candy  ul.ice-navigator { 
+			top:0;
+			padding:0; 
+			margin:0;
+			position:absolute;
+			width:100%;}
+			
+			.ice-tabs-candy  ul.ice-navigator li { 
+				cursor:hand;
+				background:#fff;
+				cursor:pointer;
+				list-style:none!important;
+				width:100%;
+				border-right:1px dotted #ccc;
+				padding:0!important;
+				margin:0!important; }
+			
+				
+				.ice-tabs-candy ul.ice-navigator li div {
+					padding:10px;
+					position:relative;
+					overflow:hidden}
+					
+				.ice-tabs-candy .ice-navigator li .ice-title {
+					 font-size:1em; 
+					 clear:none;
+					 line-height:1.7em;
+					 font-family:Tahoma, Geneva, sans-serif;
+					 font-weight:normal;
+					 margin:0!important; }
+					 
+				.ice-tabs-candy .ice-navigator li div img {	
+					float:left;
+					border:1px solid transparent;
+					margin:0 10px 10px 0 }
+					
+			.ice-tabs-candy .ice-navigator li.active,
+			.ice-tabs-candy  ul.ice-navigator li:hover {
+				background:#eee;
+				margin-left:-5px;
+				padding-left:5px;}
+				 
+				 .ice-tabs-candy .ice-navigator li.active div img {
+					 border-color:#999}
+				 
+
+
+/**
+ * BUTTONS CONTROL
+ */
+.ice-tabs-candy .ice-buttons-control{
+	opacity:0;
+	-moz-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	-webkit-transition:all .4s ease-out;
+	transition: all .4s ease-out;}
+
+	.ice-tabs-candy .ice-next, 
+	.ice-tabs-candy .ice-previous {
+		position:absolute;
+		background:url(images/arrows.png) no-repeat; 
+		z-index:10;
+		top:45%;
+		width:40px;
+		cursor:pointer;
+		height:50px;	
+		display:block;
+		text-indent:-999999px;
+		overflow:hidden;}
+		
+			
+		.ice-tabs-candy .ice-previous {	
+			background-position:0 0;
+			left:0}
+			.ice-tabs-candy .ice-previous:hover { 
+				background-position: 0 -50px;}
+			
+		.ice-tabs-candy .ice-next {
+			left:auto;
+			right:0;
+			background-position: 0 -100px;}
+			.ice-tabs-candy .ice-next:hover {
+				background-position: 0 -150px;}
+				
+		
+		.ice-main-wapper:hover .ice-buttons-control{
+			opacity:1;}		
+			
+						
+		
+/*
+ * css for override move the main wapper to the right side 
+ */
+ /* RIGHT ALIGMENT */
+.ice-right-sl-candy .ice-navigator-wrapper { float:right; }
+.ice-right-sl-candy .ice-main-wapper		  { margin-left:auto; margin-right:inherit; float:right }
+.ice-right-sl-candy .ice-navigator-outer   { position:relative }
+ /* LEFT ALIGMENT */
+.ice-left-sl-candy .ice-navigator-wrapper { float:left; }
+.ice-left-sl-candy .ice-main-wapper		 { margin-left:auto; margin-right:inherit; float:left }
+.ice-left-sl-candy .ice-navigator-outer	 { position:relative }
+.ice-left-sl-candy .ice-navigator li.active { background-image:url(current_tab_l.png); background-position:center right;}
+				 
+ /* TOP, BOTTOm ALIGMENT */
+.ice-top-sl-candy .ice-main-wapper ,  .ice-bottom-sl-candy .ice-main-wapper  { position:relative!important;} 
+.ice-top-sl-candy .ice-navigator-outer,  .ice-bottom-sl-candy .ice-navigator-outer{ position:relative; float:left }
+.ice-top-sl-candy .ice-navigator, 	    .ice-bottom-sl-candy .ice-navigator 		{ width:9999em !important }
+.ice-top-sl-candy .ice-navigator li,     .ice-bottom-sl-candy .ice-navigator li 	{ display:block; float:left; border-bottom:none; border-right:1px solid #fff; }
+/* Top Aligment */
+.ice-top-sl-candy .ice-navigator li.active { background-image:url(current_tab_t.png); background-position:center bottom;}
+.ice-top-sl-candy .ice-buttons-control { background-image:url(arrow_bg_t.png); top:auto; bottom:0; padding-top:12px; height:10px}
+/* Bottom Aligment */
+.ice-bottom-sl-candy .ice-navigator li.active { background-image:url(current_tab_b.png); background-position:center top;}
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after,  .container:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;}
+
+.clearfix { display: inline-block; }   
+
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+
+
+

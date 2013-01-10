@@ -1,0 +1,16 @@
+[12-Nov-2012 19:18:13] PHP Warning:  constant() [<a href='function.constant'>function.constant</a>]: Couldn't find constant JPATH_ in /home/mmolinav/public_html/buscarautos/libraries/joomla/installer/adapters/module.php on line 117
+[12-Nov-2012 19:18:13] PHP Warning:  constant() [<a href='function.constant'>function.constant</a>]: Couldn't find constant JPATH_ in /home/mmolinav/public_html/buscarautos/libraries/joomla/installer/adapters/module.php on line 119
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/administrator/components/com_jce/models/profiles.php on line 134
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/administrator/components/com_jce/models/profiles.php on line 134
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 375
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 06:38:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 383
+[16-Dec-2012 07:30:59] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 375
+[28-Dec-2012 21:38:46] PHP Warning:  Invalid argument supplied for foreach() in /home/mmolinav/public_html/buscarautos/libraries/joomla/database/database/mysql.php on line 375

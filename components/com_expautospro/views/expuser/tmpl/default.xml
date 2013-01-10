@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_EXPAUTOSPRO_VIEW_EXPUSER_TITLE" option="COM_EXPAUTOSPRO_VIEW_EXPUSER_OPTION">
+		<help
+			key = ""
+		/>
+		<message>
+			<![CDATA[COM_EXPAUTOSPRO_VIEW_EXPUSER_DESC]]>
+		</message>
+	</layout>
+</metadata>

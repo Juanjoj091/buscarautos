@@ -1,0 +1,212 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 - 2011 IceTheme. All Rights Reserved
+  
+  License:
+  GNU General Public License version 2 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+.ice-carousel { position:relative; }
+
+	.ice-carousel .ice-container{ 
+		height:100%;
+		width:100%;
+		position:relative; }
+
+			
+	.ice-carousel .ice-main-wapper {
+		overflow:hidden;
+		padding:0;
+		margin:0;
+		position:relative;
+		overflow:hidden;
+		z-index:1}
+		
+		.ice-carousel .ice-main-wapper .ice-main-item {
+			overflow:hidden;
+			padding:0px;
+			margin:0px;
+			height:100%;
+			width:100%;
+			position:absolute;}
+	
+	
+			.ice-carousel .ice-row { 
+				float:left;	
+				position:relative;
+				overflow:hidden; 
+				padding:0;}
+			
+			.ice-carousel .padding {
+				padding:0 10px!important}
+			
+			
+			.ice-carousel .ice-row p.iteminfo {
+				color:#999;
+				font-size:.9em;
+				margin-bottom:.5em;}
+				
+				.ice-carousel .ice-row p.iteminfo span {
+					padding-right:10px}
+			
+			.ice-carousel .ice-row span.mod-articles-category-writtenby {} 	
+				
+			.ice-carousel .ice-row span.mod-articles-category-category {} 	
+				
+			.ice-carousel .ice-row span.mod-articles-category-date {} 		
+				
+				
+			.ice-carousel .ice-row .mod-articles-category-introtext {}
+				
+			
+
+/** Ice navigator (bullets of the carousel **/
+.ice-carousel .ice-navigator-outer { 
+	position:relative; 
+	margin:-15px 0 0;	
+	overflow:hidden; 
+	float:right;
+	z-index:3 }
+	
+	.ice-carousel .ice-navigator-outer ul.ice-navigator {
+		top:0;
+		list-style:none!important;
+		padding:0!important;
+		margin:0!important;
+		position:absolute;
+		width:10000;}
+		
+		.ice-carousel .ice-navigator-outer ul.ice-navigator li {	
+			background:none!important;
+			padding:0!important;
+			margin:0!important;
+			text-indent:9999px;
+			cursor:hand;
+			cursor:pointer;
+			float:left;
+			list-style:none;}
+					
+			
+			.ice-carousel .ice-navigator-outer ul.ice-navigator li span { 
+				background:url(images/dot.png) no-repeat top; 
+				display:block;
+				height:11px;	
+				width:11px;
+				margin:0 0 0 5px;}
+				
+				.ice-carousel .ice-navigator-outer ul.ice-navigator li.active span {
+					background-position:bottom;
+					display:block; 
+					color:#FFF;}
+					
+	
+					
+/** Arrows **/
+.ice-carousel .ice-next, 
+.ice-carousel .ice-previous{
+	position:absolute;
+	background:#E1F3FE url(images/arrows.png) no-repeat!important; 
+	z-index:10;
+	top:40%;
+	width:20px;
+	height:62px;	
+	display:block;
+	text-indent:-999999px;
+	overflow:hidden;}
+	
+	.ice-carousel .ice-next { 
+		background-position: 5px -22px!important;
+		right:-16px; }
+		.ice-carousel .ice-next:hover{
+			background-position:-26px -22px!important;}
+			
+			
+	.ice-carousel .ice-previous { 
+		background-position: 6px 24px!important;
+		left:-16px; }
+		.ice-carousel .ice-previous:hover{
+			background-position: -26px 24px!important;}
+			
+			
+	.ice-carousel .ice-previous.disabled{
+		background-position:-57px 24px!important;
+		background-color:#EAEAEA!important;}
+		
+	.ice-carousel .ice-next.disabled{
+		background-position:-57px -22px!important;
+		background-color:#EAEAEA!important;}
+	
+	
+	
+		
+		
+/* Ajax Loading */		
+.ice-carousel .ice-loading{
+	left: 50%;
+	margin-left:-38px;
+    position: absolute;
+    top: 40%;
+    width: 66px;
+	height:66px;
+    z-index: 999;
+	padding:10px;
+	display:none;
+	box-shadow:0 0 12px #333;
+	border-radius:3px;
+	background-color:#fff;
+	background-image:url(images/loading.gif);
+	background-repeat:no-repeat;
+	background-position: 50% 50%;}
+	
+
+
+
+/* Styles for the JoomShoping */
+.lof-inner h4.heading {
+	text-align:center;
+	margin-bottom:12px}
+
+.jshopping_padding {
+	text-align:center}	
+	
+.jshopping_padding .product_label {
+	position: absolute;
+	margin:-10px 0 0 -25px;
+	left:50%;}
+		
+.jshopping_padding img {
+	margin-bottom:12px}
+	
+
+.jshopping_padding .description {
+	text-align:left;
+	padding-bottom:12px}
+	
+.jshopping_padding .readmore {
+	padding-top:3px}
+
+.ip_smallfont {
+    color: #999999;
+    font-size: 10px;
+    font-style: italic;
+	text-align: left;
+}
+.ip_property{
+	text-align:left;
+}
+.more_info{
+	text-align:left;
+}
+.ice_gaddress{
+	text-align:left;
+}
+.ip_featured_thumb{
+	border: solid 1px #f0f0f0; overflow:hidden !important;
+	position: relative; 
+}
+.property_overview_bannertopleft{ z-index: 10 !important; position: absolute; top: 0px; left: 0px; }
+.property_overview_bannerbotleft{ z-index: 9 !important; position: absolute; bottom: 0px; left: 0px; }
+.property_overview_bannerright{position: absolute; top: 0px; right: 0px;}

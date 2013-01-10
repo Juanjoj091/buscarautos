@@ -1,0 +1,269 @@
+/* Add new function EXP Team http://www.feellove.eu Alexey Kurguz(Grusha) and Dmitry Gorbunov(xrbyte)*/
+
+.mod_ad-gallery {
+}
+.mod_ad-gallery, .mod_ad-gallery * {
+    margin: 0;
+    padding: 0;
+}
+.mod_ad-gallery .mod_ad-image-wrapper {
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-loader {
+    position: absolute;
+    z-index: 10;
+    top: 48%;
+    left: 48%;
+    border: 1px solid #CCC;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-prev, .mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next {
+    /* Or else IE will hide it */
+    background: url(../../images/adgallery/non-existing.png);
+    
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-prev .mod_ad-prev-image, .mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next .mod_ad-next-image {
+    background: url(../../images/adgallery/ad_prev.png);
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    z-index: 101;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next .mod_ad-next-image {
+    background: url(../../images/adgallery/ad_next.png);
+    width: 30px;
+    height: 30px;
+    right: 0;
+    left: auto;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image a img {
+    border: 0;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 7px;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    background: url(../../images/adgallery/opa75.png);
+    color: #000;
+}
+
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description_color {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 7px;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    background: black repeat;
+    color: #FFF;
+    opacity: 0.5;
+}
+
+/*      .mod_ad-gallery .ad-image-wrapper .ad-image .ad-thumb-title_color {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding: 7px;
+        text-align: left;
+        width: 100%;
+        background: greenyellow;
+        color: #000;
+        opacity: 0.7;
+      }*/
+
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description .mod_ad-description-title {
+    display: block;
+}
+.mod_ad-gallery .mod_ad-controls {
+    height: 57px;
+    position: absolute;
+    bottom: 0px;
+    left: 14px;
+    z-index: 9999;
+    padding:15px 0 0 0;
+}
+.mod_ad-gallery .mod_ad-info {
+    float: left;
+}
+.mod_ad-gallery .mod_ad-slideshow-controls {
+    float: right;
+}
+.mod_ad-gallery .mod_ad-slideshow-controls .mod_ad-slideshow-start, .mod_ad-gallery .mod_ad-slideshow-controls .mod_ad-slideshow-stop {
+    padding-left: 5px;
+    cursor: pointer;
+}
+.mod_ad-gallery .mod_ad-slideshow-controls .mod_ad-slideshow-countdown {
+    padding-left: 5px;
+    font-size: 0.9em;
+}
+.mod_ad-gallery .mod_ad-slideshow-start {
+    background: url(../../images/adgallery/ad_play.png) no-repeat;
+    float:left;
+    width:15px;
+    height:15px;
+    text-indent:-9999px;
+}
+.mod_ad-gallery .mod_ad-slideshow-running .mod_ad-slideshow-start {
+    background-position:0px -25px;
+    cursor: default;
+}
+.mod_ad-gallery .mod_ad-slideshow-stop {
+    background: url(../../images/adgallery/ad_stop.png) top left no-repeat;
+    float:left;
+    width:15px;
+    height:15px;
+    text-indent:-9999px;
+}
+.mod_ad-gallery .mod_ad-slideshow-running .mod_ad-slideshow-stop {
+}
+.img_slideshow_nav {
+    vertical-align:middle;
+    margin:0 0 2px 0;
+}
+.mod_ad-gallery .mod_ad-nav {
+    background:none;
+    position: absolute;
+    /*    display: block;*/
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 47;
+}
+/*    .mod_ad-gallery .ad-forward, .mod_ad-gallery .ad-back {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      z-index: 10;
+    }
+     IE 6 doesn't like height: 100% 
+    * html .mod_ad-gallery .ad-forward, .mod_ad-gallery .ad-back {
+      height: 100px;
+    }
+    .mod_ad-gallery .ad-back {
+      cursor: pointer;
+      left: -20px;
+      width: 13px;
+      display: block;
+      background: url(img/ad_scroll_back.png) 0px 22px no-repeat;
+    }
+    .mod_ad-gallery .ad-forward {
+      cursor: pointer;
+      display: block;
+      right: -20px;
+      width: 13px;
+      background: url(img/ad_scroll_forward.png) 0px 22px no-repeat;
+    }*/
+.mod_ad-image .urlcursor {cursor: pointer;}
+
+.mod_ad-forward,.mod_ad-back{position: relative; width:77px; height:18px; margin:0px auto; cursor:pointer; z-index: 19; }
+.mod_ad-forward{background:url('../../images/adgallery/slider_bottom.png') no-repeat left bottom;bottom: 0px;}
+.mod_ad-back{background:url('../../images/adgallery/slider_top.png') no-repeat left top;}
+.mod_ad-forward:hover{background:url('../../images/adgallery/slider_bottom_hover.png') no-repeat left bottom;}
+.mod_ad-back:hover{background:url('../../images/adgallery/slider_top_hover.png') no-repeat left top;}
+/*.slider_big-container .nav-button {position: absolute; right: 12px; cursor: pointer;}*/
+
+.mod_ad-gallery .mod_ad-nav .mod_ad-thumbs {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 40;
+}
+.mod_ad-gallery .mod_ad-thumbs .mod_ad-thumb-list {
+    width: 100%;
+    /* list-style: none; */
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 33;
+}
+.mod_ad-gallery .mod_ad-thumbs .mod_ad-thumb-list .mod_ad-thumb-item {
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: 26;
+}
+.mod_ad-gallery .mod_ad-thumbs .mod_ad-thumb-list .mod_ad-thumb-item h2 {
+    background: greenyellow repeat;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    z-index: 26;
+    bottom: 0px;
+    left: 0px;
+    line-height: 34px;
+    width: 204px;
+    padding: 0px 0px 0px 10px;
+    opacity: 0.7;
+}
+.mod_ad-gallery .mod_ad-thumbs li {
+    /* padding-right: 5px; */
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+}
+
+.mod_ad-gallery .mod_ad-thumbs li a {
+    display: block;
+}
+.mod_ad-gallery .mod_ad-thumbs li a .exp_gall_line {
+    padding: 2px;
+    border: 1px solid #EAEAEA;
+    float: left;
+    width: 90%;
+    background: url(../../images/adgallery/line_bg.png) repeat-x;
+}
+.mod_ad-gallery .mod_ad-thumbs li a.mod_ad-active .exp_gall_line {
+    padding: 2px;
+    margin: 2px 0;
+    border: 1px solid #CCC;
+    color:#095197;
+}
+.mod_ad-gallery .mod_ad-thumbs li a img {
+    margin: 0px;
+    display: block;
+    padding: 0 2px 0 0;
+    float: left;
+}
+.mod_ad-gallery .mod_ad-thumbs li a.mod_ad-active img {
+}
+/* Can't do display none, since Opera won't load the images then */
+.mod_ad-preloads {
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+.exp_strong{
+    font-weight: bold;
+}

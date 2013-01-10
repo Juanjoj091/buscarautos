@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: category.xml EXP Autos Pro Category !-->
+<form>
+    <fieldset name="details"
+		addfieldpath="/administrator/components/com_expautospro/models/fields"
+	>
+        <field name="id" type="text" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	
+                        description ="JGLOBAL_FIELD_ID_DESC" />
+        <field name="userid"
+			type="user"
+			label="COM_EXPAUTOSPRO_USERID_TEXT"
+			description="COM_EXPAUTOSPRO_USERID_DESC" 
+                        required="true"
+		/>
+        <field name="lastname"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_LASTNAME_TEXT"
+			description="COM_EXPAUTOSPRO_USER_LASTNAME_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="companyname"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_COMPANYNAME_TEXT"
+			description="COM_EXPAUTOSPRO_USER_COMPANYNAME_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="country" type="country"
+                label="COM_EXPAUTOSPRO_COUNTR_TEXT" 
+                description="COM_EXPAUTOSPRO_COUNTRSELECT_DESC" />
+        <field name="expstate"  type="selectstate"
+                label="COM_EXPAUTOSPRO_STATE_TEXT" 
+                description="COM_EXPAUTOSPRO_STATESELECT_DESC" />
+        <field name="city"  type="cities"
+                label="COM_EXPAUTOSPRO_CIT_TEXT" 
+                description="COM_EXPAUTOSPRO_CITYSELECT_DESC" />
+        <field name="street"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_STREET_TEXT"
+			description="COM_EXPAUTOSPRO_USER_STREET_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="latitude"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_GOOGLEMAP_LATITUDE_TEXT"
+			description="COM_EXPAUTOSPRO_GOOGLEMAP_LATITUDE_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="longitude"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_GOOGLEMAP_LONGITUDE_TEXT"
+			description="COM_EXPAUTOSPRO_GOOGLEMAP_LONGITUDE_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="web"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_WEB_TEXT"
+			description="COM_EXPAUTOSPRO_USER_WEB_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="phone"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_PHONE_TEXT"
+			description="COM_EXPAUTOSPRO_USER_PHONE_DESC"
+			default="" class="inputbox"
+			size="15"
+                        required="true"
+		/>
+        <field name="mobphone"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_MOBPHONE_TEXT"
+			description="COM_EXPAUTOSPRO_USER_MOBPHONE_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="fax"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_FAX_TEXT"
+			description="COM_EXPAUTOSPRO_USER_FAX_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="zipcode"
+			type="inputbox"
+			label="COM_EXPAUTOSPRO_USER_ZIPCODE_TEXT"
+			description="COM_EXPAUTOSPRO_USER_ZIPCODE_DESC"
+			default="" class="inputbox"
+			size="15"
+		/>
+        <field name="userinfo" type="editor"
+			label="COM_EXPAUTOSPRO_USER_OTHERINFO_TEXT"
+			description="COM_EXPAUTOSPRO_USER_OTHERINFO_DESC"
+			class="inputbox"
+			filter="safehtml"
+			buttons="true"
+                        width="600"
+			hide="readmore,pagebreak"
+			 />
+        <field name="logo"
+			type="explogo"
+			label="COM_EXPAUTOSPRO_USER_LOGO_TEXT"
+			description="COM_EXPAUTOSPRO_USER_LOGO_DESC"
+			/>
+        <field name="emailstyle" type="radio" default="1"
+                    label="COM_EXPAUTOSPRO_USER_EMAILSTYLE_TEXT"
+                    description="COM_EXPAUTOSPRO_USER_EMAILSTYLE_DESC"
+            >
+            <option value="0">COM_EXPAUTOSPRO_USER_EMAILSTYLE_TEXT_VAL</option>
+            <option value="1">COM_EXPAUTOSPRO_USER_EMAILSTYLE_HTML_VAL</option>
+        </field>
+        <field name="ucommercial" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGER_COMMERCIAL_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGER_COMMERCIAL_DESC"
+				default="0" class="inputbox"
+			>
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="utop" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGER_TOP_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGER_TOP_DESC"
+				default="0" class="inputbox"
+			>
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="uspecial" type="radio"
+				label="COM_EXPAUTOSPRO_ADMANAGER_SPECIAL_TEXT"
+				description="COM_EXPAUTOSPRO_ADMANAGER_SPECIAL_DESC"
+				default="0" class="inputbox"
+			>
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="state" type="list"
+			label="JGLOBAL_STATE" description="JFIELD_PUBLISHED_DESC"
+			class="inputbox" size="1" default="1" >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="ordering"
+			type="ordering"
+			class="inputbox"
+			database="expuser"
+			wherefield="catid"
+			catid="777"
+			label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC"
+		/>
+        <field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"
+			description="COM_EXPAUTOSPRO_LANGUAGE_DESC" class="inputbox"
+		>
+            <option value="*">JALL</option>
+        </field>
+    </fieldset>
+        <fields name="params">
+        <fieldset name="addparams"
+			label="COM_EXPAUTOSPRO_ADMANAGERS_TAB_PARAMS_TEXT"
+			>
+        <field name="userphoto"
+			type="expphoto"
+			label="COM_EXPAUTOSPRO_USER_PHOTO_TEXT"
+			description="COM_EXPAUTOSPRO_USER_PHOTO_DESC"
+			/>
+        </fieldset>
+    </fields>
+</form>

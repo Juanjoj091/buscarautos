@@ -1,0 +1,145 @@
+
+/*---------------------------------------------------------------- 
+  Copyright:
+  (C) 2008 - 2010 IceTheme
+  
+  License:
+  GNU/GPL http://www.gnu.org/copyleft/gpl.html
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+.iceaccordion { 
+	clear:both;
+	margin:0;} 
+
+	.iceaccordion h4.toggler {
+		border-bottom:1px dotted #ccc;
+		padding:6px 0;
+		margin:0;
+		text-align:left;
+		font-size:1.2em;
+		cursor: pointer;
+		position:relative;
+		cursor: pointer;
+		background: url(images/iceaccordion_arrow_closed.png) no-repeat center right}
+	
+		.iceaccordion h4.open {
+			background-image:url(images/iceaccordion_arrow_open.png)}
+	
+		.iceaccordion h4.toggler span {
+			display:block;
+			width:88%;}
+			
+			.iceaccordion h4.toggler span:hover span {
+				background:#eee;
+				display:inline;
+				margin-left:-5px;
+				padding:0 5px}
+			
+	.iceaccordion div.accordion_content{
+		position: relative;
+		overflow: hidden;}
+		
+		.iceaccordion div.accordion_content .padding {
+			margin:.75em 0 1em;}
+		
+		.iceaccordion div.accordion_content img {
+			float:left;
+			margin:.3em 1em 1em 0}
+			
+			
+/* Pagination */	
+.iceaccordion-paging {
+	clear:both;
+    padding: 13px 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;}
+	
+	.iceaccordion-paging .iceaccordion-prev,
+	.iceaccordion-paging .iceaccordion-next{
+		position: absolute;
+		cursor: pointer;
+		width: 20px;
+		height: 25px;
+		left: 0;
+		top: 12px;
+		background:url(images/iceaccordion_arrows.png) repeat 0 0}
+		.iceaccordion-paging .iceaccordion-prev span,
+		.iceaccordion-paging .iceaccordion-next span { display:none}
+
+	.iceaccordion-paging .iceaccordion-next{
+		left:auto;
+		right: 0;
+		background-position:0 50px}
+		
+				
+		.iceaccordion-paging .iceaccordion-prev:hover {
+			background-position:0 -25px}
+		
+		.iceaccordion-paging .iceaccordion-next:hover {
+			background-position:0 -75px}
+	
+	
+
+ul.iceaccordion-numbers {
+    margin: 0px !important;
+    overflow: hidden;
+    padding: 0 22px 10px;
+    text-align: center;}
+		
+	ul.iceaccordion-numbers li {
+		cursor: pointer;
+		display: inline;
+		font-size:1.2em;
+		list-style: none outside none;
+		margin-bottom: 0;
+		padding: 0 4px;
+		color:#999;}
+		
+		ul.iceaccordion-numbers li:hover {
+			color: #444;}
+			
+		ul.iceaccordion-numbers li.active {
+			color: #444;
+			font-weight: bold;
+			cursor: default;}
+	
+
+.iceaccordion-loading {
+    left: 50%;
+	margin-left:-22px;
+	position: absolute;
+	top: 0;
+	width: 24px;
+	height:24px;
+	z-index: 999;
+	padding:10px;
+	display:none;
+	box-shadow:0 0 12px #444;
+	border-radius:3px;
+	background-color:#fff;
+	background-image:url(images/loading.gif);
+	background-repeat:no-repeat;
+	background-position: 50% 50%;}
+		
+/*Joomshopping styles */
+.joomshopping_padding {
+	padding-top:10px;
+	text-align:center}
+	
+	.joomshopping_padding img {
+		float:none!important;
+		margin:0 0 1em!important;}
+		
+	.joomshopping_padding .description {
+		text-align:left;
+		padding-bottom:12px;}	 
+
+
+	.joomshopping_padding .product_label {
+		position: absolute;
+		margin:-10px 0 0 -25px;
+		left:50%;}

@@ -1,0 +1,108 @@
+
+/****************************************************************************************\
+ **   @name		EXP Autos  2.0                                                  **
+ **   @package          Joomla 1.6                                                      **
+ **   @author		EXP TEAM::Alexey Kurguz (Grusha)                                **
+ **   @copyright	Copyright (C) 2005 - 2011  EXP TEAM::Alexey Kurguz (Grusha)     **
+ **   @link             http://www.feellove.eu                                          **
+ **   @license		Commercial License                                              **
+ \****************************************************************************************/
+
+
+div.icon-48-expautospro {
+    background: url('images/expautospro.png') no-repeat left;
+}
+div.icon-48-expautosprocat {
+    background: url('images/categories.png') no-repeat left;
+}
+div.icon-48-expautospro-categories {
+    background: url('images/categories.png') no-repeat left;
+}
+div.icon-48-expautospro-category-add {
+    background: url('images/categories.png') no-repeat left;
+}
+div.icon-48-expautospromake {
+    background: url('images/make.png') no-repeat left;
+}
+div.icon-48-expautospromodel {
+    background: url('images/model.png') no-repeat left;
+}
+div.icon-48-expautosprobodytype {
+    background: url('images/bodytype.png') no-repeat left;
+}
+div.icon-48-expautosprodrive {
+    background: url('images/drive.png') no-repeat left;
+}
+div.icon-48-expautosprofuel {
+    background: url('images/fuel.png') no-repeat left;
+}
+div.icon-48-expautosprotran {
+    background: url('images/tran.png') no-repeat left;
+}
+div.icon-48-expautosprocondit {
+    background: url('images/condition.png') no-repeat left;
+}
+div.icon-48-expautosprocolor {
+    background: url('images/color.png') no-repeat left;
+}
+div.icon-48-expautosprocountr {
+    background: url('images/country.png') no-repeat left;
+}
+div.icon-48-expautosprostate {
+    background: url('images/state.png') no-repeat left;
+}
+div.icon-48-expautosprocit {
+    background: url('images/cities.png') no-repeat left;
+}
+div.icon-48-expautosproeqcat {
+    background: url('images/catequipment.png') no-repeat left;
+}
+div.icon-48-expautosproeq {
+    background: url('images/equipment.png') no-repeat left;
+}
+div.icon-48-expautosprouserlevel {
+    background: url('images/userlevel.png') no-repeat left;
+}
+div.icon-48-expautosproexpuser {
+    background: url('images/user.png') no-repeat left;
+}
+div.icon-48-expautosproexpconfig {
+    background: url('images/config.png') no-repeat left;
+}
+div.icon-48-expautosprocurr {
+    background: url('images/currency.png') no-repeat left;
+}
+div.icon-48-expautosproextrafield1 {
+    background: url('images/extrafield1.png') no-repeat left;
+}
+div.icon-48-expautosproextrafield2 {
+    background: url('images/extrafield2.png') no-repeat left;
+}
+div.icon-48-expautosproextrafield3 {
+    background: url('images/extrafield3.png') no-repeat left;
+}
+div.icon-48-expautospropayment {
+    background: url('images/payment.png') no-repeat left;
+}
+div.icon-48-expautosproadmanager {
+    background: url('images/admanager.png') no-repeat left;
+}
+div.icon-48-expexport {
+    background: url('images/export.png') no-repeat left;
+}
+div.icon-48-expimport {
+    background: url('images/import.png') no-repeat left;
+}
+
+/* others style */
+#jformcity.ajax-loading {
+	background: url('images/ajax-loader.gif') no-repeat center;
+}
+ul.exp_config_page{}
+ul.exp_config_page li{
+}
+ul.exp_config_page li label{
+    width: 200px;
+    padding: 0 20px 0 0;
+    text-align: right;
+}

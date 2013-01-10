@@ -1,0 +1,39 @@
+
+/****************************************************************************************\
+ **   @name		EXP Autos  2.0                                                  **
+ **   @package          Joomla 1.6                                                      **
+ **   @author		EXP TEAM::Alexey Kurguz (Grusha)                                **
+ **   @copyright	Copyright (C) 2005 - 2011  EXP TEAM::Alexey Kurguz (Grusha)     **
+ **   @link             http://www.feellove.eu                                          **
+ **   @license		Commercial License                                              **
+ \****************************************************************************************/
+
+
+#expautospro{}
+
+#expautospro ul>li{
+    float:left;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#expautospro .exptoplevel {
+    margin: 10px 15px;
+}
+
+#expautospro span.exptoplevel{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+img.expcatimg{
+    vertical-align: middle;
+}
+
+#expautospro ul.expcat_general{
+    margin: 0 auto;
+}
+
+#expautospro .exptoplevel ul {
+    margin:10px 0;
+}

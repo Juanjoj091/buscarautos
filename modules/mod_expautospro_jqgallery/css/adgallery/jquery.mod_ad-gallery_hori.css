@@ -1,0 +1,226 @@
+/* Add new function EXP Team http://www.feellove.eu Alexey Kurguz(Grusha) and Dmitry Gorbunov(xrbyte)*/
+
+.mod_ad-gallery {
+}
+.mod_ad-gallery, .mod_ad-gallery * {
+    margin: 0;
+    padding: 0;
+}
+.mod_ad-gallery .mod_ad-image-wrapper {
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-loader {
+    position: absolute;
+    z-index: 10;
+    top: 48%;
+    left: 48%;
+    border: 1px solid #CCC;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-href {
+    position: absolute;
+    top: 0;
+    left: 26%;
+    width: 45%;
+    height: 90%;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-prev, .mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next, .mod_ad-gallery .mod_ad-image-wrapper .mod_ad-href {
+    /* Or else IE will hide it */
+    background: url(../../images/adgallery/non-existing.png);
+    
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-prev .mod_ad-prev-image, .mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next .mod_ad-next-image, .mod_ad-gallery .mod_ad-image-wrapper .mod_ad-href .mod_ad-href-image {
+    background: url(../../images/adgallery/ad_prev.png);
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    z-index: 101;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-next .mod_ad-next-image {
+    background: url(../../images/adgallery/ad_next.png);
+    width: 30px;
+    height: 30px;
+    right: 0;
+    left: auto;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-href .mod_ad-href-image {
+    background: url(../../images/adgallery/ad_href.png);
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    right: auto;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 7px;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    background: url(../../images/adgallery/transparent70.png);
+    color: #FFF;
+    z-index:102;
+}
+* html .mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description {
+}
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description .mod_ad-description-title {
+    display: block;
+}
+.mod_ad-gallery .mod_ad-controls {
+    height: 20px;
+    /*width: 540px;*/
+    margin:5px auto;
+}
+.mod_ad-gallery .mod_ad-info {
+    float: left;
+}
+.mod_ad-gallery .mod_ad-slideshow-controls {
+    float: right;
+}
+.mod_ad-gallery .mod_ad-slideshow-controls .mod_ad-slideshow-start, .mod_ad-gallery .mod_ad-slideshow-controls .mod_ad-slideshow-stop {
+    padding-left: 5px;
+    cursor: pointer;
+}
+.mod_ad-gallery .mod_ad-slideshow-controls .mod_ad-slideshow-countdown {
+    padding-left: 1px;
+    font-size: 0.9em;
+}
+.mod_ad-gallery .mod_ad-nav {
+    /* width: 540px;*/
+    position: relative;
+    margin:0 auto;
+}
+.mod_ad-gallery .mod_ad-forward, .mod_ad-gallery .mod_ad-back {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+}
+
+.mod_ad-gallery .mod_ad-back {
+    cursor: pointer;
+    left: -40px;
+    width: 30px;
+    display: block;
+    background: url(../../images/adgallery/ad_prev.png) 0px 25px no-repeat;
+}
+.mod_ad-gallery .mod_ad-forward {
+    cursor: pointer;
+    display: block;
+    right: -40px;
+    width: 30px;
+    background: url(../../images/adgallery/ad_next.png) 0px 25px no-repeat;
+}
+.mod_ad-gallery .mod_ad-nav .mod_ad-thumbs {
+    overflow: hidden;
+    width: 100%;
+}
+.mod_ad-gallery .mod_ad-thumbs .mod_ad-thumb-list {
+    float: left;
+    width: 9000px;
+    list-style: none;
+}
+.mod_ad-gallery .mod_ad-thumbs li {
+    float: left;
+    padding-right: 5px;
+}
+.mod_ad-gallery .mod_ad-thumbs li a {
+    display: block;
+    padding: 2px;
+}
+.mod_ad-gallery .mod_ad-thumbs li a:hover {
+    border:none
+}
+.mod_ad-gallery .mod_ad-thumbs li a img {
+    border: 2px solid #000;
+    display: block;
+}
+.mod_ad-gallery .mod_ad-thumbs li a.mod_ad-active img {
+    border: 2px solid #FF6600;
+}
+/* Can't do display none, since Opera won't load the images then */
+.mod_ad-preloads {
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+.mod_ad-gallery .mod_ad-slideshow-start {
+    background: url(../../images/adgallery/ad_play.png) no-repeat;
+    float:left;
+    width:15px;
+    height:15px;
+    text-indent:-9999px;
+}
+.mod_ad-gallery .mod_ad-slideshow-running .mod_ad-slideshow-start {
+    background-position:0px -25px;
+    cursor: default;
+}
+.mod_ad-gallery .mod_ad-slideshow-stop {
+    background: url(../../images/adgallery/ad_stop.png) top left no-repeat;
+    float:left;
+    width:15px;
+    height:15px;
+    text-indent:-9999px;
+}
+.mod_ad-gallery .mod_ad-slideshow-running .mod_ad-slideshow-stop {
+}
+.img_slideshow_nav {
+    vertical-align:middle;
+    margin:0 0 2px 0;
+}
+
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 7px;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    background: url(../../images/adgallery/opa75.png);
+    color: #000;
+}
+
+.mod_ad-gallery .mod_ad-image-wrapper .mod_ad-image .mod_ad-image-description_color {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 7px;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    background: black repeat;
+    color: #FFF;
+    opacity: 0.5;
+}
+.mod_ad-image .urlcursor {cursor: pointer;}

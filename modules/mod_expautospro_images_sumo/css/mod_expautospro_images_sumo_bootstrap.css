@@ -1,0 +1,126 @@
+
+/****************************************************************************************\
+ **   @name		EXP Autos  2.0                                                  **
+ **   @package          Joomla 1.6                                                      **
+ **   @author		EXP TEAM::Alexey Kurguz (Grusha)                                **
+ **   @copyright	Copyright (C) 2005 - 2011  EXP TEAM::Alexey Kurguz (Grusha)     **
+ **   @link             http://www.feellove.eu                                          **
+ **   @license		Commercial License                                              **
+ \****************************************************************************************/
+
+.modexpimagessumo ul{
+    margin: 0 auto;
+}
+
+#expautospro .expsumo_full{
+    margin: 0 auto;
+}
+
+.expsumo_left{
+    float: left;
+}
+
+.expsumo_left_cont{
+    float: left;
+}
+
+.modexpimg_block_right{
+    float: right;
+    margin: 0px 5px 0 5px;
+}
+
+.expsumo_full li.expsumo_li{
+    padding: 5px;
+    margin: 0 10px 10px 0;
+}
+
+.expsumo_title{
+    font-size: 16px;
+}
+
+.expautos_images_price{
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.modexpimagessumo .exp_text_b {
+    margin: 3px 0;
+}
+
+
+.modexpimagessumo .expautos_images_clear{
+    clear: both;
+}
+
+.modexpimagessumo .modimg {
+    position: relative;
+    float: left;
+}
+
+.modexpimagessumo div.commercial span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background: url(../images/commercial_s.png) no-repeat;
+}
+
+.modexpimagessumo div.top span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: url(../images/top_s.png) no-repeat;
+}
+
+.modexpimagessumo div.special span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: url(../images/special_s.png) no-repeat;
+}
+
+.modexpimagessumo div.solid span {
+    width: 62px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: url(../images/sold_s.png) no-repeat;
+}
+
+.expautos_images_text{
+    font-size: 0.9em;
+}
+
+.expimgsumo_pos{
+    position: absolute;
+}
+
+.modexpimagessumo div.newdate{
+    width: 25px;
+    height: 11px;
+    display: block;
+    position: relative;
+    top: -15px;
+    left: 2px;
+    /*background: url(../images/newdate.png) no-repeat right;*/
+}
+
+.modexpimagessumo div.expreserved {
+    width: 45px;
+    height: 11px;
+    display: block;
+    position: relative;
+    top: -15px;
+    left: 52px;
+    /*background: url(../images/reserved.png) no-repeat right;*/
+}
